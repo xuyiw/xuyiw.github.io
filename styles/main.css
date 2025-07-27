@@ -1,1 +1,10 @@
-
+/* Navigation Bar */
+nav {
+    background: #333;
+    padding: 1rem;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
