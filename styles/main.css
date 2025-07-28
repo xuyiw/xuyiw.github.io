@@ -8,3 +8,15 @@ nav a {
     text-decoration: none;
     margin-right: 1rem;
 }
+.download-btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.download-btn:hover {
+    background: #45a049;
+}
