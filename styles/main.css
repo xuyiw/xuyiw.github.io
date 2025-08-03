@@ -20,3 +20,29 @@ nav a {
 .download-btn:hover {
     background: #45a049;
 }
+/* Excel Download Buttons */
+.excel-btn {
+    display: inline-block;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+    border: 2px solid #45a049; /* Darker green border */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.excel-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.download-buttons {
+    margin: 25px 0;
+    text-align: center; /* Centers buttons horizontally */
+}
