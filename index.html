@@ -1,19 +1,73 @@
-<!DOCTYPE html> 
-<html>
-  <head>
-    <title>XUYI - Homepage</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Financial Modeling</title>
     <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-  <!-- ===== NAVIGATION BAR ===== -->
-    <nav>
-    <a href="index.html">Home</a> 
-    <a href="Modelling.html">Modelling</a>
-    <a href="about.html">About</a>
-</nav> 
-    
-    <h1>Hi, I'm Xuyi!</h1>  
-    <p>Welcome to my website!</p> 
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="fullscreen-section">
+        <div class="hero-content">
+            <h1>Your Name</h1>
+            <p class="subtitle">Financial Analyst</p>
+            <div class="scroll-down"></div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="content-section">
+        <h2>About</h2>
+        <p>Brief professional introduction here...</p>
+    </section>
+
+    <!-- ===== MODELING ===== -->
+    <section id="modeling" class="content-section dark-bg">
+        <h2>Modeling</h2>
+        <div class="card-container">
+            <div class="model-card" onclick="location.href='#reit'">
+                <h3>REIT</h3>
+                <p>Real Estate Investment Trusts</p>
+            </div>
+            <div class="model-card" onclick="location.href='#pe'">
+                <h3>Private Equity</h3>
+                <p>Investment Analysis</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REIT CONTENT ===== -->
+    <section id="reit" class="content-section">
+        <div class="two-column">
+            <div class="text-content">
+                <h3>REIT Modeling</h3>
+                <p>Background context...</p>
+                <table class="financial-table">
+                    <!-- Your table content -->
+                </table>
+            </div>
+            <div class="download-container">
+                <a href="reit_model.xlsx" class="download-btn">
+                    <i class="fas fa-download"></i> Download Model
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PE CONTENT ===== -->
+    <section id="pe" class="content-section dark-bg">
+        <!-- Similar structure to REIT section -->
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <!-- Form fields -->
+        </form>
+    </section>
+</body>
 </html>
 
