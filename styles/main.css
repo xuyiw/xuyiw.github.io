@@ -1,48 +1,94 @@
-/* Navigation Bar */
-nav {
-    background: #333;
-    padding: 1rem;
+
+/* ===== BASE STYLES ===== */
+:root {
+    --primary-color: #4a6fa5;  /* Amal's blue */
+    --secondary-color: #f5f5f5;
+    --text-dark: #333;
+    --text-light: #777;
 }
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 1rem;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
 }
-.download-btn {
-    display: inline-block;
-    background: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px 0;
-}
-.download-btn:hover {
-    background: #45a049;
-}
-/* Excel Download Buttons */
-.excel-btn {
-    display: inline-block;
-    background-color: #4CAF50; /* Green color */
-    color: white;
-    padding: 12px 24px;
+
+/* ===== SECTION STYLES ===== */
+.fullscreen-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    margin: 10px 5px;
+    position: relative;
+}
+
+.content-section {
+    padding: 100px 10%;
+    min-height: 80vh;
+}
+
+.dark-bg {
+    background-color: var(--secondary-color);
+}
+
+/* ===== HERO ===== */
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.2), url('../assets/hero-bg.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+/* ===== MODEL CARDS ===== */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.model-card {
+    background: white;
+    padding: 40px;
+    width: 300px;
+    cursor: pointer;
     transition: all 0.3s ease;
-    border: 2px solid #45a049; /* Darker green border */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.excel-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.model-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-.download-buttons {
-    margin: 25px 0;
-    text-align: center; /* Centers buttons horizontally */
+/* ===== DOWNLOAD BUTTON ===== */
+.download-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
