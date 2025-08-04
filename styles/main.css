@@ -129,6 +129,24 @@ nav {
 .nav-links a:hover {
   color: #4a6fa5; /* Template's blue color */
 }
+
+/* Hero List Styles */
+.hero-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.list-item {
+    color: white;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
 /* Minimalist Left Border Indicator */
 .list-item::before {
     content: "";
