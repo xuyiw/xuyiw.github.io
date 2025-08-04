@@ -8,14 +8,19 @@
 }
 */
 
+
 .navMenu {
   text-align: center; /* Works if items are inline/inline-block */
+  font-size:larger
 }
 
 .navMenu a {
   display: inline-block; /* Ensures links respect text-align */
   margin: 0 10px;       /* Adds spacing between links */
+  color: rgb(217 132 235);
+  text-decoration: none; /* Optional: Remove underline */
 }
+
 
 body {
     font-family: 'Montserrat', sans-serif;
