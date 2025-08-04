@@ -1,0 +1,169 @@
+
+/* ===== BASE STYLES ===== */
+:root {
+    --primary-color: #4a6fa5;  /* Amal's blue */
+    --secondary-color: #f5f5f5;
+    --text-dark: #333;
+    --text-light: #777;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* ===== SECTION STYLES ===== */
+.fullscreen-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.content-section {
+    padding: 100px 10%;
+    min-height: 80vh;
+}
+
+.dark-bg {
+    background-color: var(--secondary-color);
+}
+
+/* ===== HERO ===== */
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.2), url('../assets/hero-bg.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 40rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+/* ===== MODEL CARDS ===== */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.model-card {
+    background: white;
+    padding: 40px;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.model-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== DOWNLOAD BUTTON ===== */
+.download-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ===== HEADER STYLES ===== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,0.9); /* Semi-transparent white */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #555;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4a6fa5; /* Template's blue color */
+}
+
+/* Hero List Styles */
+.hero-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.list-item {
+    color: white;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+/* Minimalist Left Border Indicator */
+.list-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.4em;
+    height: 0.6em;
+    width: 2px;
+    background: rgba(255,255,255,0.5);
+}
+
+/* Hover Effect */
+.list-item:hover {
+    padding-left: 2rem;
+    transition: all 0.3s ease;
+}
+.list-item:hover::before {
+    background: white;
+    height: 0.8em;
+}
