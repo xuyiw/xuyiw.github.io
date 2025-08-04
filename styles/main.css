@@ -129,33 +129,23 @@ nav {
 .nav-links a:hover {
   color: #4a6fa5; /* Template's blue color */
 }
-/* Hero Bullet Points */
-.hero-bullets {
-    margin: 2rem auto;
-    max-width: 600px;
-}
-
-.hero-bullets ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.hero-bullets li {
-    color: white;
-    font-weight: 300;
-    font-size: 1.1rem;
-    margin: 0.8rem 0;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.hero-bullets li:before {
-    content: "•";
-    color: rgba(255,255,255,0.7);
+/* Minimalist Left Border Indicator */
+.list-item::before {
+    content: "";
     position: absolute;
     left: 0;
-    font-size: 1.5rem;
-    line-height: 1;
+    top: 0.4em;
+    height: 0.6em;
+    width: 2px;
+    background: rgba(255,255,255,0.5);
+}
+
+/* Hover Effect */
+.list-item:hover {
+    padding-left: 2rem;
+    transition: all 0.3s ease;
+}
+.list-item:hover::before {
+    background: white;
+    height: 0.8em;
 }
