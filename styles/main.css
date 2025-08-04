@@ -129,3 +129,33 @@ nav {
 .nav-links a:hover {
   color: #4a6fa5; /* Template's blue color */
 }
+/* Hero Bullet Points */
+.hero-bullets {
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.hero-bullets ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.hero-bullets li {
+    color: white;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 0.8rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.hero-bullets li:before {
+    content: "•";
+    color: rgba(255,255,255,0.7);
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
