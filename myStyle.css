@@ -182,3 +182,21 @@ header {
     background: white;
     height: 0.8em;
 }
+/* LBO Project wording*/
+.model-application {
+    background: rgba(255,255,255,0.03);
+    padding: 1.5rem;
+    border-left: 4px solid #4a6fa5;
+    margin: 2rem 0;
+}
+
+.key-highlights li strong {
+    color: #4a6fa5;
+    font-weight: 600;
+}
+
+.model-application h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
