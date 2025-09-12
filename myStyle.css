@@ -93,7 +93,7 @@ body {
     bottom: 30px;
     right: 30px;
     background: var(--primary-color);
-    color: white;
+    color: rgb(217 132 235);
     padding: 15px 25px;
     border-radius: 30px;
     text-decoration: none;
