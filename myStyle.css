@@ -47,7 +47,7 @@ body {
     background-color: var(--secondary-color);
 }
 
-/* ===== HERO ===== */
+/* ===== HERO ===== 
 #hero {
     background: linear-gradient(rgba(0,0,0,0.2), url('../assets/hero-bg.jpg');
     background-size: cover;
@@ -63,7 +63,8 @@ body {
 .subtitle {
     font-weight: 300;
     letter-spacing: 3px;
-}
+} 
+*/
 
 /* ===== MODEL CARDS ===== */
 .card-container {
