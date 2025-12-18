@@ -163,7 +163,7 @@ header {
     background: #f8fafc;
     border-left: 4px solid #3b82f6;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
@@ -183,7 +183,7 @@ header {
 .label {
     display: block;
     color: #64748b;
-    font-size: 0.55rem;
+    font-size: 0.75rem;
     font-weight: 600;
     margin-bottom: 4px;
 }
@@ -213,7 +213,7 @@ header {
 }
 
 .property-focus {
-    margin-top: 15px;
+    margin-top: 5px;
     padding-top: 15px;
     border-top: 1px solid #e2e8f0;
 }
