@@ -153,6 +153,73 @@ header {
 }
 
 
+/* Reits table present*/
+.fund-table {
+  width: 100%;
+  max-width: 820px;
+  border-collapse: collapse;
+  margin: 18px 0 28px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden; /* keeps rounded corners */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.fund-table th,
+.fund-table td {
+  padding: 14px 16px;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.fund-table tr:last-child th,
+.fund-table tr:last-child td {
+  border-bottom: none;
+}
+
+.fund-table th {
+  width: 32%;
+  font-weight: 600;
+  color: #111;
+  background: rgba(0,0,0,0.02);
+  white-space: nowrap;
+}
+
+.fund-table td {
+  color: #222;
+  line-height: 1.5;
+}
+
+/* Mobile: stack label/value for readability */
+@media (max-width: 700px) {
+  .fund-table th {
+    width: auto;
+    white-space: normal;
+  }
+  .fund-table, .fund-table tbody, .fund-table tr {
+    display: block;
+  }
+  .fund-table tr {
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  .fund-table th, .fund-table td {
+    display: block;
+    padding: 6px 2px;
+    border: none;
+    background: transparent;
+  }
+  .fund-table th {
+    opacity: 0.75;
+    font-size: 0.95rem;
+  }
+}
+
+
+
+
+
 /* =========================
    Two-column layout for sections (REIT / PE)
    ========================= */
