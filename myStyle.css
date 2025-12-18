@@ -79,12 +79,8 @@ header {
    Hero
    ========================= */
 #hero {
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  color: white;
+ background: none;
+  color: black;
 }
 
 .hero-content h1 {
