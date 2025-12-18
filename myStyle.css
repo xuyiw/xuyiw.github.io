@@ -183,7 +183,7 @@ header {
 .label {
     display: block;
     color: #64748b;
-    font-size: 0.75rem;
+    font-size: 0.55rem;
     font-weight: 600;
     margin-bottom: 4px;
 }
@@ -191,7 +191,7 @@ header {
 .value {
     color: #1e293b;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .highlight-stats {
     display: flex;
@@ -208,7 +208,7 @@ header {
 
 .stat-value {
     color: #059669;
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     font-weight: 700;
 }
 
