@@ -91,7 +91,7 @@ header {
 
 /* Bullet-style items used in hero */
 .list-item {
-  color: white;
+  color: black;
   font-weight: 300;
   font-size: 1.1rem;
   margin: 1rem 0;
@@ -116,7 +116,7 @@ header {
 }
 
 .list-item:hover::before {
-  background: white;
+  background: black;
   height: 0.8em;
 }
 
@@ -131,7 +131,7 @@ header {
 
 .contact-link {
   text-decoration: none;
-  color: white;
+  color: black;
   padding-bottom: 4px;
   border-bottom: 2px solid pink;
 }
