@@ -140,6 +140,19 @@ header {
   border-bottom-color: hotpink;
 }
 
+/* Contents section links */
+.content-link {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid pink;
+  padding-bottom: 4px;
+}
+
+.content-link:hover {
+  border-bottom-color: hotpink;
+}
+
+
 /* =========================
    Two-column layout for sections (REIT / PE)
    ========================= */
