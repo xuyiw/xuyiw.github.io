@@ -153,6 +153,67 @@ header {
 }
 
 
+/* Hero: image left, content right */
+.hero-split {
+  background: none;          /* keep your current preference */
+  color: black;
+}
+
+.hero-wrap {
+  width: min(1200px, 92vw);
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;  /* left image slightly wider */
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 440px;             /* controls the “card” height */
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.hero-content {
+  text-align: left;          /* right side text aligned like your example */
+}
+
+/* Optional: tighten the bullets on the right side */
+.hero-bullets {
+  margin: 18px 0 10px;
+}
+
+/* Make contact links look like your design (underline in your accent color) */
+.contact-link {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent-pink);
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+/* spacing between contact links */
+.hero-contact-links {
+  margin-top: 18px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+/*for mobile on first page */
+@media (max-width: 900px) {
+  .hero-wrap {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .hero-photo img {
+    height: 320px;
+  }
+}
+
+
 /* Reits table present*/
 <style>
 .fund-highlights {
