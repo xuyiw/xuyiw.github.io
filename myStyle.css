@@ -277,6 +277,11 @@ header {
     font-size: 0.85rem;
   }
 }
+@media (max-width: 700px) {
+  .fund-charts {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
