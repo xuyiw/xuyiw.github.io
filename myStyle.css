@@ -254,7 +254,7 @@ header {
 }
 
 /* Mobile: stack label/value for readability */
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .fund-table th {
     width: auto;
     white-space: normal;
@@ -277,7 +277,7 @@ header {
     font-size: 0.85rem;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .fund-charts {
     grid-template-columns: 1fr;
   }
