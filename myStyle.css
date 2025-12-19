@@ -154,80 +154,31 @@ header {
 
 
 /* Reits table present*/
-<style>
-.fund-highlights {
-    margin: 20px 0;
+/* REIT two-column columns */
+.reit-left {
+  text-align: left;
 }
 
-.highlight-card {
-    background: #f8fafc;
-    border-left: 4px solid #3b82f6;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+.reit-right {
+  text-align: left;
 }
 
-.highlight-main {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-    gap: 15px;
+/* 4 images in a clean responsive grid */
+.fund-charts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 10px 0 16px;
 }
 
-.highlight-item {
-    flex: 1;
-    min-width: 120px;
+.fund-charts img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
 }
 
-.label {
-    display: block;
-    color: #64748b;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
-
-.value {
-    color: #1e293b;
-    font-weight: 600;
-    font-size: 0.8rem;
-}
-.highlight-stats {
-    display: flex;
-    gap: 15px;
-    margin: 20px 0;
-    padding: 15px 0;
-    border-top: 1px solid #e2e8f0;
-}
-
-.stat-box {
-    flex: 0.5;
-}
-
-.stat-value {
-    color: #059669;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-
-.property-focus {
-    margin-top: 5px;
-    padding-top: 15px;
-    border-top: 1px solid #e2e8f0;
-}
-
-.focus-label {
-    color: #64748b;
-    font-weight: 600;
-    margin-right: 5px;
-}
-
-.focus-items {
-    color: #334155;
-    font-weight: 400;
-}
-</style>
 /* Mobile: stack label/value for readability */
 @media (max-width: 700px) {
   .fund-table th {
