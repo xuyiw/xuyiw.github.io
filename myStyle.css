@@ -200,6 +200,7 @@ header {
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
+   justify-context:left;
 }
 /*for mobile on first page */
 @media (max-width: 900px) {
