@@ -125,7 +125,7 @@ header {
   margin-top: 24px;
   display: flex;
   gap: 32px;
-  justify-content: left;
+  justify-content: right;
   flex-wrap: wrap;
 }
 
