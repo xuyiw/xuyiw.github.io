@@ -121,13 +121,13 @@ header {
 }
 
 /* Contact links under hero */
-.hero-contact-links {
+/*.hero-contact-links {
   margin-top: 24px;
   display: flex;
   gap: 32px;
   justify-content: right;
   flex-wrap: wrap;
-}
+}*/
 
 .contact-link {
   text-decoration: none;
