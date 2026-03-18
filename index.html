@@ -102,78 +102,93 @@
 
     <!-- ===== REIT CONTENT ===== -->
     <section id="reit" class="content-section">
-        <div class="two-column">
+        <div class="two-column reit-layout">
        <!-- ===== Left column ===== -->
             <div class="reit-left">
                 <h3>REIT - WXY Capital</h3>
-                <p>WXY Capital is REITs Fund forcus on Industry warehouse and office investment. By Q2 25,Fund completed all capital calls and three assets purchase. </p>          
+                <p>WXY Capital is REITs Fund forcus on Industry warehouse and office investment. By Q2 25,Fund completed all capital calls and three assets purchase. </p>
 
-<!-- Beautiful Fund Details Grid -->
-    <div class="fund-highlights">
-    <div class="highlight-card">
-        <div class="highlight-main">
-            <div class="highlight-item">
-                <span class="label">Fund Type</span>
-                <span class="value">CLOSE END</span>
+                <div class="reit-panel reit-panel-compact">
+                    <h4>Fund Performance</h4>
+                    <div class="fund-charts">
+                        <img src="uploads/Absolute Return.png" alt="Absolute Return">
+                        <img src="uploads/reit asset class.png" alt="REIT asset class allocation">
+                        <img src="uploads/Net paid in capital vs TVPI.jpg" alt="Net paid in capital vs TVPI">
+                        <img src="uploads/Fund vs Benchmark.jpg" alt="Fund vs Benchmark">
+                    </div>
+                </div>
             </div>
-            <div class="highlight-item">
-                <span class="label">Term</span>
-                <span class="value">2022 - 2027</span>
-            </div>
-            <div class="highlight-item">
-                <span class="label">Assets</span>
-                <span class="value">3 deployed</span>
-            </div>
-            </div>
-        <div class="highlight-stats">
-            <div class="stat-box">
-                <span class="label">AUM</span>
-                <span class="stat-value">£245.3M</span>
-            </div>
-            <div class="stat-box">
-                <span class="label">Target IRR</span>
-                <span class="stat-value">15%</span>
+ <!-- Right column / python summary -->
+            <div class="reit-right">
+                <div class="reit-summary-grid">
+                    <div class="reit-panel reit-panel-compact">
+                        <h4>Fund Snapshot</h4>
+                        <div class="fund-highlights">
+                            <div class="highlight-card">
+                                <div class="highlight-main">
+                                    <div class="highlight-item">
+                                        <span class="label">Fund Type</span>
+                                        <span class="value">CLOSE END</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <span class="label">Term</span>
+                                        <span class="value">2022 - 2027</span>
+                                    </div>
+                                    <div class="highlight-item">
+                                        <span class="label">Assets</span>
+                                        <span class="value">3 deployed</span>
+                                    </div>
+                                </div>
+                                <div class="highlight-stats">
+                                    <div class="stat-box">
+                                        <span class="label">AUM</span>
+                                        <span class="stat-value">£245.3M</span>
+                                    </div>
+                                    <div class="stat-box">
+                                        <span class="label">Target IRR</span>
+                                        <span class="stat-value">15%</span>
+                                    </div>
+                                </div>
+
+                                <div class="property-focus">
+                                    <span class="focus-label">Focus:</span>
+                                    <span class="focus-items">Industrial • Warehouse • Logistics • Office</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reit-panel reit-panel-compact">
+                        <h4>Cashflow Forecast</h4>
+                        <iframe
+                            src="./pycharts/cashflow_chart.html"
+                            width="100%"
+                            height="250"
+                            class="reit-embed reit-embed-compact"
+                            title="WXY Capital cashflow chart">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="reit-panel">
+                    <h4>Python Model</h4>
+                    <iframe
+                        src="https://nbviewer.org/github/xuyiw/xuyiw.github.io/blob/main/uploads/REITpthonsummary.ipynb"
+                        width="100%"
+                        height="680"
+                        class="reit-embed"
+                        title="WXY Capital Python notebook summary">
+                    </iframe>
+                </div>
+
+                <p>For the fund performance details including cashflow forecast and waterfall please see the downloan</p>
+                <div class="download-container reit-download">
+                    <a href="./uploads/REIT Fund performance analysis.xlsx" download class="download-btn">
+                        <i class="fas fa-download"></i> WXY Capital Fund performance
+                    </a>
+                </div>
             </div>
         </div>
-        
-        <div class="property-focus">
-            <span class="focus-label">Focus:</span>
-            <span class="focus-items">Industrial • Warehouse • Logistics • Office</span>
-        </div>
-    </div>
-</div>
-<!-- pyhton chart cashflow-->                
-<iframe
-  src="./pycharts/cashflow_chart.html"
-  width="100%"
-  height="500"
-  style="border: none;">
-</iframe>                
-</div>
- <!-- Right column / fund performance-->
-<div class="reit-right">            
-<h4>Fund Performance</h4>
-<div style="display: flex; justify-content: space-between; gap: 15px;">
-  <img src="uploads/Absolute Return.png" alt="Absolute Return" style="width:32%; height:auto;">
-  <img src="uploads/reit asset class.png" alt="reit asset class.png" style="width:32%; height:auto;">
-  <img src="uploads/Net paid in capital vs TVPI.jpg" alt="Net paid in capital vs TVPI" style="width:32%; height:auto;">  
-  <img src="uploads/Fund vs Benchmark.jpg" alt="Fund vs Benchmark" style="width:32%; height:auto;">
-</div>
- 
-    <iframe 
-src="https://nbviewer.org/github/xuyiw/xuyiw.github.io/blob/main/uploads/REITpthonsummary.ipynb"
-width="100%" 
-height="500" 
-style="border:none;">
-</iframe>           
-            <p>For the fund performance details including cashflow forecast and waterfall please see the downloan</p>
-            <div class="download-container">
-                <a href="./uploads/REIT Fund performance analysis.xlsx" download class="download-btn">
-                    <i class="fas fa-download"></i> WXY Capital Fund performance
-                </a>
-            </div>
-        </div>
-    </div>
     </section>
 
     <!-- ===== PE CONTENT ===== -->
@@ -221,4 +236,3 @@ style="border:none;">
     
 </body>
 </html>
-
