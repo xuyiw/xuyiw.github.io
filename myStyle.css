@@ -154,10 +154,6 @@ header {
 
 
 /* Hero: image left, content right */
-.hero-split {
-  background: none;          /* keep your current preference */
-  color: black;
-}
 
 .hero-wrap {
   width: min(1200px, 92vw);
@@ -314,30 +310,6 @@ header {
   box-shadow: 0 6px 18px rgba(0,0,0,0.10);
 }
 
-/* Mobile: stack label/value for readability */
-@media (max-width: 900px) {
-  .fund-table th {
-    width: auto;
-    white-space: normal;
-  }
-  .fund-table, .fund-table tbody, .fund-table tr {
-    display: block;
-  }
-  .fund-table tr {
-    padding: 10px 14px;
-    border-bottom: 1px solid rgba(0,0,0,0.08);
-  }
-  .fund-table th, .fund-table td {
-    display: block;
-    padding: 6px 2px;
-    border: none;
-    background: transparent;
-  }
-  .fund-table th {
-    opacity: 0.5;
-    font-size: 0.85rem;
-  }
-}
 @media (max-width: 900px) {
   .fund-charts {
     grid-template-columns: 1fr;
