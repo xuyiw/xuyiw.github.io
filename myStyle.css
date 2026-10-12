@@ -463,3 +463,49 @@ p { margin: 0 0 1rem; }
   .section { padding: 68px 0; }
   .tab { padding: 12px 14px; font-size: 0.85rem; }
 }
+
+/* =========================
+   Hover tooltip (email address)
+   ========================= */
+.has-tip { position: relative; }
+
+.has-tip::after,
+.has-tip::before {
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.has-tip::after {
+  content: attr(data-tip);
+  bottom: calc(100% + 12px);
+  transform: translate(-50%, 4px);
+  background: var(--coral);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 8px 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(20, 33, 61, 0.25);
+}
+
+.has-tip::before {
+  content: "";
+  bottom: calc(100% + 6px);
+  transform: translate(-50%, 4px);
+  border: 6px solid transparent;
+  border-top-color: var(--coral);
+  border-bottom-width: 0;
+}
+
+.has-tip:focus-visible::after,
+.has-tip:focus-visible::before { opacity: 1; transform: translate(-50%, 0); }
+
+@media (hover: hover) {
+  .has-tip:hover::after,
+  .has-tip:hover::before { opacity: 1; transform: translate(-50%, 0); }
+}
