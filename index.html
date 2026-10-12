@@ -1,252 +1,324 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xuyi Wu | Fund Finance </title>
-    <link rel="stylesheet" href="myStyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xuyi Wu | Fund Finance</title>
+  <meta name="description" content="Xuyi Wu - ACA, ex-Deloitte auditor and fund finance analyst. Digital CV with REIT and private equity case studies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="myStyle.css">
 </head>
 <body>
- 
-    <header>
-  <nav>
-    <div class="navMenu">
-      <a href="#about">About</a>
-      <a href="#Contents">Contents</a>
-    </div>
-  </nav>
-</header>
 
-    <!-- ===== Xuyi Wu page ===== -->
-<section id="hero" class="fullscreen-section">
-  <div class="hero-wrap">
-      <!-- ===== left selfile pic ===== -->
- <div class="hero-photo">
-      <img src="uploads/xwprofilepic.jpeg" alt="Xuyi Wu">
-    </div>
+  <!-- ===== NAV ===== -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="nav-logo">Xuyi Wu</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#reit">REIT case</a>
+        <a href="#pe">PE case</a>
+        <a href="#fundaccounting">Fund accounting</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-      <!-- ===== right content ===== -->
-     <div class="hero-content">
-    <h1>Xuyi Wu</h1>
+  <main id="top">
 
-    <div class="hero-bullets">
-      <div class="list-item">ACA</div>
-      <div class="list-item">CFA Level I pass</div>  
-      <div class="list-item">EX-Deloitte Auditor</div>
-      <div class="list-item">EX-Fund Accountant</div>
-      <div class="list-item">Fund Finance Analyst </div>
-    </div>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Digital CV &amp; portfolio</p>
+          <h1>Xuyi Wu</h1>
+          <p class="hero-role">Fund Finance Analyst</p>
+          <p class="hero-lead">
+            Former Deloitte auditor and fund accountant. I combine audit rigour with financial
+            modelling and Python to turn fund data into clear, decision-ready analysis.
+          </p>
 
-    <div class="hero-contact-links">
-      <a href="http://www.linkedin.com/in/xuyi-wu-8a30b1142" target="_blank" rel="noopener noreferrer" class="contact-link">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="mailto:wuxuyi001@gmail.com" class="contact-link">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-      <a href="./uploads/Xuyi_Wu_CV_.pdf" download class="contact-link">
-        <i class="fas fa-file-download"></i> CV
-      </a>
-    </div>
+          <ul class="chips">
+            <li>ACA</li>
+            <li>CFA Level I passed</li>
+            <li>Ex-Deloitte Auditor</li>
+            <li>Ex-Fund Accountant</li>
+          </ul>
 
-    <div class="scroll-down"></div>
-  </div>
-</section>
+          <div class="hero-actions">
+            <a href="./uploads/Xuyi_Wu_CV_.pdf" download class="btn btn-primary"><i class="fas fa-file-arrow-down"></i> Download CV</a>
+            <a href="#reit" class="btn btn-ghost">View case studies <i class="fas fa-arrow-down"></i></a>
+          </div>
+
+          <div class="social">
+            <a href="http://www.linkedin.com/in/xuyi-wu-8a30b1142" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:wuxuyi001@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="uploads/xwprofilepic.jpeg" alt="Portrait of Xuyi Wu">
+        </div>
+      </div>
+    </section>
 
     <!-- ===== ABOUT ===== -->
-    <section id="about" class="content-section">
-        <h2>About</h2>
-        <p>I build this website to demonstrate my coding skills and share my finance/fund knowledge in following areas: </p>
-    <ul>
-        <li>Web development</li>
-        <li>Python data analysis and presentation</li>
-        <li>Fund Accounting/Admin</li>
-        <li>Fund Financial Modeling</li>
-        <li>Fund Financial Analysis</li>
-    </ul>    
-    </section>
-
-    <!-- ===== Contents ===== -->
-    <section id="Contents" class="content-section dark-bg">
-        <h2>Contents</h2>
-            <h3>
-                <a href="#reit" class="content-link">REIT case</a>
-            </h3>
-            <ul>
-                <li>Real Estate Investment Trusts</li>
-                <li> Cashflow forecast</li>
-                <li>Sensitivity Analysis</li>    
-             </ul>      
-        
-            <h3>
-                 <a href="#pe" class="content-link"> Private Equity case</a>
-            </h3>
-            <ul>        
-                <li>Capital Structure</li> 
-                <li>Investment Returns</li> 
-                <li>Credit Metrics</li>
-                <li>Sensitivity Analysis</li>       
-            </ul> 
-        
-            <h3>
-                <a href="#fundfinance" class="content-link"> Fund Admin</a>
-            </h3>
-            <ul>
-                <li>Waterfall calculation</li> 
-                <li>Capital Call calculation</li> 
-           </ul>   
-    </section>
-
-    <!-- ===== REIT CONTENT ===== -->
-    <section id="reit" class="content-section">
-        <div class="two-column reit-layout">
-       <!-- ===== Left column ===== -->
-            <div class="reit-left">
-                <h3>REIT - WXY Capital</h3>
-                <p>WXY Capital is REITs Fund forcus on Industry warehouse and office investment. By Q2 25,Fund completed all capital calls and three assets purchase. </p>
-
-                <div class="reit-panel reit-panel-compact">
-                    <h4>Fund Performance</h4>
-                    <div class="fund-charts">
-                        <img src="uploads/Absolute Return.png" alt="Absolute Return">
-                        <img src="uploads/reit asset class.png" alt="REIT asset class allocation">
-                        <img src="uploads/Net paid in capital vs TVPI.jpg" alt="Net paid in capital vs TVPI">
-                        <img src="uploads/Fund vs Benchmark.jpg" alt="Fund vs Benchmark">
-                    </div>
-                </div>
-            </div>
- <!-- Right column / python summary -->
-            <div class="reit-right">
-                <div class="reit-summary-grid">
-                    <div class="reit-panel reit-panel-compact">
-                        <h4>Fund Snapshot</h4>
-                        <div class="fund-highlights">
-                            <div class="highlight-card">
-                                <div class="highlight-main">
-                                    <div class="highlight-item">
-                                        <span class="label">Fund Type</span>
-                                        <span class="value">CLOSE END</span>
-                                    </div>
-                                    <div class="highlight-item">
-                                        <span class="label">Term</span>
-                                        <span class="value">2022 - 2027</span>
-                                    </div>
-                                    <div class="highlight-item">
-                                        <span class="label">Assets</span>
-                                        <span class="value">3 deployed</span>
-                                    </div>
-                                </div>
-                                <div class="highlight-stats">
-                                    <div class="stat-box">
-                                        <span class="label">AUM</span>
-                                        <span class="stat-value">£245.3M</span>
-                                    </div>
-                                    <div class="stat-box">
-                                        <span class="label">Target IRR</span>
-                                        <span class="stat-value">15%</span>
-                                    </div>
-                                </div>
-
-                                <div class="property-focus">
-                                    <span class="focus-label">Focus:</span>
-                                    <span class="focus-items">Industrial • Warehouse • Logistics • Office</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="reit-panel reit-panel-compact">
-                        <h4>Cashflow Forecast</h4>
-                        <iframe
-                            src="./pycharts/cashflow_chart.html"
-                            width="100%"
-                            height="250"
-                            class="reit-embed reit-embed-compact"
-                            title="WXY Capital cashflow chart">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="reit-panel">
-                    <h4>Python Model</h4>
-                    <iframe
-                        src="https://nbviewer.org/github/xuyiw/xuyiw.github.io/blob/main/uploads/REITpthonsummary.ipynb"
-                        width="100%"
-                        height="680"
-                        class="reit-embed"
-                        title="WXY Capital Python notebook summary">
-                    </iframe>
-                </div>
-
-                <p>For the fund performance details including cashflow forecast and waterfall please see the downloan</p>
-                <div class="download-container reit-download">
-                    <a href="./uploads/REIT Fund performance analysis.xlsx" download class="download-btn">
-                        <i class="fas fa-download"></i> WXY Capital Fund performance
-                    </a>
-                </div>
-            </div>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>What this site is for</h2>
+          <p class="lead">I built this website to demonstrate my coding skills and share my finance and fund knowledge.</p>
         </div>
-    </section>
-<!-- ===== REIT HTML INSERT ===== -->
-<section id="reit-html" class="content-section dark-bg">
-    <h3>REIT - WXY Capital</h3>
-    <div class="reit-panel">
-        <h4>Interactive HTML View</h4>
-        <iframe
-            src="./uploads/REITs%20project%20dashboard.html"
-            width="100%"
-            height="760"
-            class="reit-embed"
-            title="REITs project dashboard">
-        </iframe>
-    </div>
-</section>
-    <!-- ===== PE CONTENT ===== -->
-    <section id="pe" class="content-section dark-bg">
-         <div class="two-column">
-            <div class="text-content">
-                <h3>PE - WXY Corporation</h3>
-                
-                <div class="project-background">
-                <h4>Investment Thesis</h4>
-                <p><strong>WXY Corporation</strong> is a global leader in experience-based reward campaigns, powered by its proprietary SaaS platform COSMOS. The private equity acquisition is underwritten at a maximum valuation of <strong>10.0× LTM EBITDA</strong>.</p>
-                
-                <p>The transaction is structured as a leveraged buyout with approximately <strong>60% debt financing</strong> and <strong>40% equity contribution</strong>. This model analyzes the investment's viability under various operational and macroeconomic scenarios.</p>
-                </div>
 
-    <div class="key-highlights">
-        <h4>LBO Model Outputs</h4>
-    </div>
-
-<div class="model-application">
-    <h4>Project Exit Strategy analysis</h4>
-    <ul>
-        <li>Sale to Private Equity: 9-10X with 45% likelyhood</li>
-        <li>Sale to Trade:          10-11X with 45% likelyhood</li>
-        <li>IPO:                    11-12X with 10% likelyhood</li>
-    </ul>
-</div>
-                
-                <table class="financial-table">
-                    <!-- Your table content -->
-                </table>
-            </div>
-            <div class="download-container">
-                <a href="./uploads/WXY project LBO.xlsx" download class="download-btn">
-                    <i class="fas fa-download"></i> Download LBO
-                </a>
-            </div>
+        <div class="card-grid cols-5">
+          <article class="card skill">
+            <i class="fas fa-code"></i>
+            <h3>Web development</h3>
+          </article>
+          <article class="card skill">
+            <i class="fab fa-python"></i>
+            <h3>Python data analysis &amp; presentation</h3>
+          </article>
+          <article class="card skill">
+            <i class="fas fa-scale-balanced"></i>
+            <h3>Fund accounting &amp; admin</h3>
+          </article>
+          <article class="card skill">
+            <i class="fas fa-table-cells"></i>
+            <h3>Fund financial modelling</h3>
+          </article>
+          <article class="card skill">
+            <i class="fas fa-chart-line"></i>
+            <h3>Fund financial analysis</h3>
+          </article>
         </div>
+      </div>
     </section>
 
- <!-- ===== Fund Admin CONTENT ===== -->
-  <section id="fundfinance" class="content-section dark-bg">
-       </section> 
+    <!-- ===== CASE STUDIES INTRO ===== -->
+    <section class="section section-tint" id="cases">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Case studies</p>
+          <h2>Two funds, two ways of looking at returns</h2>
+          <p class="lead">A real estate fund viewed through performance and cashflow, and a leveraged buyout viewed through structure and exit.</p>
+        </div>
 
-    
+        <div class="card-grid cols-2">
+          <a href="#reit" class="card case-card">
+            <span class="case-tag">Case 01</span>
+            <h3>REIT &mdash; WXY Capital</h3>
+            <p>Closed-end industrial and office fund. Performance, cashflow forecast and a Python model.</p>
+            <span class="case-link">Read case <i class="fas fa-arrow-right"></i></span>
+          </a>
+          <a href="#pe" class="card case-card">
+            <span class="case-tag">Case 02</span>
+            <h3>Private equity &mdash; WXY Corporation</h3>
+            <p>LBO of a SaaS-led rewards business. Capital structure, returns, credit metrics and exit routes.</p>
+            <span class="case-link">Read case <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== REIT CASE ===== -->
+    <section id="reit" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Case 01 &middot; Real estate</p>
+          <h2>REIT &mdash; WXY Capital</h2>
+          <p class="lead">
+            WXY Capital is a REIT fund focused on industrial warehouse and office investment.
+            By Q2 25, the Fund had completed all capital calls and the purchase of three assets.
+          </p>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat"><span class="stat-label">Fund type</span><span class="stat-value">Closed-end</span></div>
+          <div class="stat"><span class="stat-label">Term</span><span class="stat-value">2022 &ndash; 2027</span></div>
+          <div class="stat"><span class="stat-label">Assets</span><span class="stat-value">3 deployed</span></div>
+          <div class="stat stat-accent"><span class="stat-label">AUM</span><span class="stat-value">&pound;245.3M</span></div>
+          <div class="stat stat-accent"><span class="stat-label">Target IRR</span><span class="stat-value">15%</span></div>
+        </div>
+        <p class="focus"><strong>Focus:</strong> Industrial &bull; Warehouse &bull; Logistics &bull; Office</p>
+
+        <h3 class="sub-title">Fund performance</h3>
+        <div class="chart-grid">
+          <figure><img src="uploads/Absolute Return.png" alt="Absolute return" loading="lazy"></figure>
+          <figure><img src="uploads/reit asset class.png" alt="REIT asset class allocation" loading="lazy"></figure>
+          <figure><img src="uploads/Net paid in capital vs TVPI.jpg" alt="Net paid in capital vs TVPI" loading="lazy"></figure>
+          <figure><img src="uploads/Fund vs Benchmark.jpg" alt="Fund versus benchmark" loading="lazy"></figure>
+        </div>
+
+        <h3 class="sub-title">Explore the model</h3>
+        <div class="tabs" data-tabs>
+          <div class="tab-list" role="tablist">
+            <button class="tab is-active" role="tab" aria-selected="true" data-target="tab-cashflow">Cashflow forecast</button>
+            <button class="tab" role="tab" aria-selected="false" data-target="tab-python">Python model</button>
+            <button class="tab" role="tab" aria-selected="false" data-target="tab-dashboard">Interactive dashboard</button>
+          </div>
+
+          <div class="tab-panel is-active" id="tab-cashflow" role="tabpanel">
+            <iframe src="./pycharts/cashflow_chart.html" height="460" title="WXY Capital cashflow chart" loading="lazy"></iframe>
+          </div>
+          <div class="tab-panel" id="tab-python" role="tabpanel">
+            <iframe src="https://nbviewer.org/github/xuyiw/xuyiw.github.io/blob/main/uploads/REITpythonsummary.ipynb" height="680" title="WXY Capital Python notebook summary" loading="lazy"></iframe>
+          </div>
+          <div class="tab-panel" id="tab-dashboard" role="tabpanel">
+            <iframe src="./uploads/REITs%20project%20dashboard.html" height="760" title="REITs project dashboard" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="download-bar">
+          <p>Full fund performance workbook, including cashflow forecast and waterfall.</p>
+          <a href="./uploads/REIT Fund performance analysis.xlsx" download class="btn btn-primary"><i class="fas fa-download"></i> Download workbook</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PE CASE ===== -->
+    <section id="pe" class="section section-tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Case 02 &middot; Private equity</p>
+          <h2>PE &mdash; WXY Corporation</h2>
+          <p class="lead">
+            WXY Corporation is a global leader in experience-based reward campaigns, powered by its
+            proprietary SaaS platform COSMOS.
+          </p>
+        </div>
+
+        <div class="split">
+          <div>
+            <h3 class="sub-title first">Investment thesis</h3>
+            <p>
+              The acquisition is underwritten at a maximum valuation of <strong>10.0&times; LTM EBITDA</strong>,
+              structured as a leveraged buyout. The model tests the investment under a range of
+              operational and macroeconomic scenarios.
+            </p>
+
+            <h3 class="sub-title">Capital structure</h3>
+            <div class="split-bar" role="img" aria-label="Approximately 60 percent debt and 40 percent equity">
+              <span class="bar-debt" style="width:60%">Debt ~60%</span>
+              <span class="bar-equity" style="width:40%">Equity ~40%</span>
+            </div>
+
+            <h3 class="sub-title">Model coverage</h3>
+            <ul class="tick-list">
+              <li>Capital structure</li>
+              <li>Investment returns</li>
+              <li>Credit metrics</li>
+              <li>Sensitivity analysis</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="sub-title first">Exit strategy analysis</h3>
+            <div class="exit-list">
+              <div class="exit">
+                <div class="exit-top"><span>Sale to private equity</span><strong>9&ndash;10&times;</strong></div>
+                <div class="meter"><span style="width:45%"></span></div>
+                <small>45% likelihood</small>
+              </div>
+              <div class="exit">
+                <div class="exit-top"><span>Sale to trade</span><strong>10&ndash;11&times;</strong></div>
+                <div class="meter"><span style="width:45%"></span></div>
+                <small>45% likelihood</small>
+              </div>
+              <div class="exit">
+                <div class="exit-top"><span>IPO</span><strong>11&ndash;12&times;</strong></div>
+                <div class="meter"><span style="width:10%"></span></div>
+                <small>10% likelihood</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="placeholder">
+          <i class="fas fa-chart-column"></i>
+          <div>
+            <h4>LBO model outputs</h4>
+            <p>Returns and credit-metric tables will appear here once the model is updated.</p>
+          </div>
+        </div>
+
+        <div class="download-bar">
+          <p>The full LBO model, including sensitivities.</p>
+          <a href="./uploads/WXY project LBO.xlsx" download class="btn btn-primary"><i class="fas fa-download"></i> Download LBO model</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FUND ACCOUNTING ===== -->
+    <section id="fundaccounting" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Fund accounting &amp; admin</p>
+          <h2>More on the way</h2>
+          <p class="lead">Worked examples from the administration side of a fund are being added.</p>
+        </div>
+
+        <div class="card-grid cols-3">
+          <article class="card soon">
+            <i class="fas fa-water"></i>
+            <h3>Waterfall calculation</h3>
+            <p>Distribution tiers, hurdle and carry.</p>
+            <span class="badge">Coming soon</span>
+          </article>
+          <article class="card soon">
+            <i class="fas fa-money-bill-transfer"></i>
+            <h3>Capital call calculation</h3>
+            <p>Investor allocations and drawdown notices.</p>
+            <span class="badge">Coming soon</span>
+          </article>
+          <article class="card soon">
+            <i class="fas fa-plus"></i>
+            <h3>More topics</h3>
+            <p>NAV, reporting and reconciliations.</p>
+            <span class="badge">Planned</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Let&rsquo;s talk</h2>
+        <p class="lead">Open to conversations about fund finance, fund accounting and analysis roles.</p>
+        <div class="hero-actions center">
+          <a href="mailto:wuxuyi001@gmail.com" class="btn btn-light"><i class="fas fa-envelope"></i> Email me</a>
+          <a href="http://www.linkedin.com/in/xuyi-wu-8a30b1142" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="./uploads/Xuyi_Wu_CV_.pdf" download class="btn btn-outline-light"><i class="fas fa-file-arrow-down"></i> CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year">2026</span> Xuyi Wu</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('[data-tabs]').forEach(function (group) {
+      var tabs = group.querySelectorAll('.tab');
+      var panels = group.querySelectorAll('.tab-panel');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (t) { t.classList.remove('is-active'); t.setAttribute('aria-selected', 'false'); });
+          panels.forEach(function (p) { p.classList.remove('is-active'); });
+          tab.classList.add('is-active');
+          tab.setAttribute('aria-selected', 'true');
+          group.querySelector('#' + tab.dataset.target).classList.add('is-active');
+        });
+      });
+    });
+  </script>
 </body>
 </html>
