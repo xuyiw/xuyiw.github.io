@@ -442,9 +442,6 @@ p { margin: 0 0 1rem; }
 .contact h2 { color: #fff; }
 .contact .lead { color: #b7c4dc; margin-bottom: 28px; }
 
-.contact-alt { margin: 26px 0 0; font-size: 0.92rem; color: #b7c4dc; }
-.contact-alt a { color: #fff; }
-.contact-alt a:hover { color: var(--coral); }
 
 .site-footer { background: #0e182d; color: #8a99b5; text-align: center; padding: 22px 0; font-size: 0.85rem; }
 
