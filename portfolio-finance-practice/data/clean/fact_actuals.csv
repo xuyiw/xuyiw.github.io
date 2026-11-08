@@ -1,0 +1,666 @@
+﻿je_number,project_id,month_end,category,supplier,invoice_ref,description,amount_gbp
+JE-100001,LME-P001,2026-01-31,Contractor,Corvus Technology Ltd,INV-71900,Contractor invoice,155640
+JE-100002,LME-P001,2026-01-31,Contractor,Brightwell Consulting Ltd,INV-11262,Contractor invoice,105720
+JE-100003,LME-P001,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,109360
+JE-100004,LME-P001,2026-01-31,Software Licence,Fathom Software Ltd,INV-32598,Licence fee,81070
+JE-100005,LME-P001,2026-01-31,Hardware,Delta Quay Networks Ltd,INV-50888,Hardware purchase,53010
+JE-100006,LME-P001,2026-01-31,Training,Learning Works Ltd,INV-22982,Training,11420
+JE-100007,LME-P001,2026-01-31,Other,Various suppliers,INV-80486,Other project cost,14770
+JE-100008,LME-P002,2026-01-31,Contractor,Brightwell Consulting Ltd,INV-56029,Contractor invoice,73150
+JE-100009,LME-P002,2026-01-31,Contractor,Harlow Data Services Ltd,INV-63825,Contractor invoice,55910
+JE-100010,LME-P002,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,70730
+JE-100011,LME-P002,2026-01-31,Software Licence,Fathom Software Ltd,INV-49157,Licence fee,56110
+JE-100012,LME-P002,2026-01-31,Hardware,Pennine Infrastructure Ltd,INV-53735,Hardware purchase,12830
+JE-100013,LME-P002,2026-01-31,Training,Skillbridge Training Ltd,INV-74942,Training,5700
+JE-100014,LME-P002,2026-01-31,Other,Travel and expenses,INV-70727,Other project cost,8130
+JE-100015,LME-P003,2026-01-31,Contractor,Harlow Data Services Ltd,INV-14488,Contractor invoice,109350
+JE-100016,LME-P003,2026-01-31,Contractor,Orchard Digital Ltd,INV-31049,Contractor invoice,116180
+JE-100017,LME-P003,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,68970
+JE-100018,LME-P003,2026-01-31,Software Licence,Quayside Software Ltd,INV-91600,Licence fee,66140
+JE-100019,LME-P003,2026-01-31,Hardware,Pennine Infrastructure Ltd,INV-15733,Hardware purchase,40850
+JE-100020,LME-P003,2026-01-31,Training,Learning Works Ltd,INV-78516,Training,8720
+JE-100021,LME-P003,2026-01-31,Other,Various suppliers,INV-87211,Other project cost,13970
+JE-100022,LME-P004,2026-01-31,Contractor,Corvus Technology Ltd,INV-98659,Contractor invoice,65270
+JE-100023,LME-P004,2026-01-31,Contractor,Harlow Data Services Ltd,INV-78789,Contractor invoice,57320
+JE-100024,LME-P004,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,46400
+JE-100025,LME-P004,2026-01-31,Software Licence,Meridian Cloud Services Ltd,INV-42017,Licence fee,33310
+JE-100026,LME-P004,2026-01-31,Hardware,Delta Quay Networks Ltd,INV-62071,Hardware purchase,23810
+JE-100027,LME-P004,2026-01-31,Training,Learning Works Ltd,INV-17483,Training,6850
+JE-100028,LME-P004,2026-01-31,Other,Various suppliers,INV-43589,Other project cost,4780
+JE-100029,LME-P005,2026-01-31,Contractor,Ellis and Marsh Advisory LLP,INV-46860,Contractor invoice,54030
+JE-100030,LME-P005,2026-01-31,Contractor,Corvus Technology Ltd,INV-40808,Contractor invoice,37510
+JE-100031,LME-P005,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,59770
+JE-100032,LME-P005,2026-01-31,Software Licence,Quayside Software Ltd,INV-64080,Licence fee,67490
+JE-100033,LME-P005,2026-01-31,Training,Skillbridge Training Ltd,INV-83994,Training,7040
+JE-100034,LME-P005,2026-01-31,Other,Travel and expenses,INV-38439,Other project cost,4500
+JE-100035,LME-P006,2026-01-31,Contractor,Ellis and Marsh Advisory LLP,INV-76767,Contractor invoice,42030
+JE-100036,LME-P006,2026-01-31,Contractor,Orchard Digital Ltd,INV-83514,Contractor invoice,30750
+JE-100037,LME-P006,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,54280
+JE-100038,LME-P006,2026-01-31,Software Licence,Meridian Cloud Services Ltd,INV-68077,Licence fee,19990
+JE-100039,LME-P006,2026-01-31,Training,Learning Works Ltd,INV-15801,Training,8570
+JE-100040,LME-P006,2026-01-31,Other,Various suppliers,INV-71093,Other project cost,4910
+JE-100041,LME-P007,2026-01-31,Contractor,Ellis and Marsh Advisory LLP,INV-88925,Contractor invoice,53850
+JE-100042,LME-P007,2026-01-31,Contractor,Harlow Data Services Ltd,INV-19476,Contractor invoice,64000
+JE-100043,LME-P007,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,75460
+JE-100044,LME-P007,2026-01-31,Software Licence,Quayside Software Ltd,INV-22830,Licence fee,24870
+JE-100045,LME-P007,2026-01-31,Training,Skillbridge Training Ltd,INV-56829,Training,11600
+JE-100046,LME-P007,2026-01-31,Other,Travel and expenses,INV-46957,Other project cost,12260
+JE-100047,LME-P008,2026-01-31,Contractor,Orchard Digital Ltd,INV-10700,Contractor invoice,38310
+JE-100048,LME-P008,2026-01-31,Contractor,Ellis and Marsh Advisory LLP,INV-77408,Contractor invoice,36680
+JE-100049,LME-P008,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,47790
+JE-100050,LME-P008,2026-01-31,Software Licence,Quayside Software Ltd,INV-29938,Licence fee,16220
+JE-100051,LME-P008,2026-01-31,Training,Learning Works Ltd,INV-39674,Training,12560
+JE-100052,LME-P008,2026-01-31,Other,Travel and expenses,INV-68324,Other project cost,11320
+JE-100053,LME-P009,2026-01-31,Contractor,Ellis and Marsh Advisory LLP,INV-94108,Contractor invoice,57190
+JE-100054,LME-P009,2026-01-31,Contractor,Larch Technology Ltd,INV-54690,Contractor invoice,38450
+JE-100055,LME-P009,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,31670
+JE-100056,LME-P009,2026-01-31,Software Licence,Fathom Software Ltd,INV-66468,Licence fee,33660
+JE-100057,LME-P009,2026-01-31,Hardware,Pennine Infrastructure Ltd,INV-34080,Hardware purchase,152770
+JE-100058,LME-P009,2026-01-31,Training,Skillbridge Training Ltd,INV-92335,Training,6890
+JE-100059,LME-P009,2026-01-31,Other,Various suppliers,INV-53206,Other project cost,10640
+JE-100060,LME-P010,2026-01-31,Contractor,Larch Technology Ltd,INV-70432,Contractor invoice,73260
+JE-100061,LME-P010,2026-01-31,Contractor,Corvus Technology Ltd,INV-89984,Contractor invoice,69790
+JE-100062,LME-P010,2026-01-31,Internal Labour,Internal payroll recharge,,Payroll recharge,35210
+JE-100063,LME-P010,2026-01-31,Software Licence,Meridian Cloud Services Ltd,INV-43103,Licence fee,54100
+JE-100064,LME-P010,2026-01-31,Hardware,Pennine Infrastructure Ltd,INV-65134,Hardware purchase,110490
+JE-100065,LME-P010,2026-01-31,Training,Learning Works Ltd,INV-47346,Training,7600
+JE-100066,LME-P010,2026-01-31,Other,Various suppliers,INV-63099,Other project cost,11230
+JE-100067,LME-P001,2026-02-28,Contractor,Larch Technology Ltd,INV-15211,Contractor invoice,177560
+JE-100068,LME-P001,2026-02-28,Contractor,Harlow Data Services Ltd,INV-59779,Contractor invoice,152070
+JE-100069,LME-P001,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,137750
+JE-100070,LME-P001,2026-02-28,Software Licence,Fathom Software Ltd,INV-14022,Licence fee,97070
+JE-100071,LME-P001,2026-02-28,Hardware,Granite Hardware Ltd,INV-43596,Hardware purchase,68740
+JE-100072,LME-P001,2026-02-28,Training,Skillbridge Training Ltd,INV-19083,Training,13760
+JE-100073,LME-P001,2026-02-28,Other,Various suppliers,INV-52591,Other project cost,20880
+JE-100074,LME-P002,2026-02-28,Contractor,Orchard Digital Ltd,INV-96832,Contractor invoice,68570
+JE-100075,LME-P002,2026-02-28,Contractor,Corvus Technology Ltd,INV-47839,Contractor invoice,57800
+JE-100076,LME-P002,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,67870
+JE-100077,LME-P002,2026-02-28,Software Licence,Quayside Software Ltd,INV-50474,Licence fee,56200
+JE-100078,LME-P002,2026-02-28,Hardware,Pennine Infrastructure Ltd,INV-71263,Hardware purchase,13520
+JE-100079,LME-P002,2026-02-28,Training,Skillbridge Training Ltd,INV-38902,Training,5620
+JE-100080,LME-P002,2026-02-28,Other,Travel and expenses,INV-74903,Other project cost,8210
+JE-100081,LME-P003,2026-02-28,Contractor,Ellis and Marsh Advisory LLP,INV-15251,Contractor invoice,151500
+JE-100082,LME-P003,2026-02-28,Contractor,Orchard Digital Ltd,INV-43837,Contractor invoice,136100
+JE-100083,LME-P003,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,78420
+JE-100084,LME-P003,2026-02-28,Software Licence,Quayside Software Ltd,INV-67158,Licence fee,77840
+JE-100085,LME-P003,2026-02-28,Hardware,Granite Hardware Ltd,INV-44472,Hardware purchase,53710
+JE-100086,LME-P003,2026-02-28,Training,Learning Works Ltd,INV-19884,Training,9890
+JE-100087,LME-P003,2026-02-28,Other,Various suppliers,INV-52107,Other project cost,15430
+JE-100088,LME-P004,2026-02-28,Contractor,Harlow Data Services Ltd,INV-23026,Contractor invoice,55650
+JE-100089,LME-P004,2026-02-28,Contractor,Ellis and Marsh Advisory LLP,INV-61624,Contractor invoice,63160
+JE-100090,LME-P004,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,46390
+JE-100091,LME-P004,2026-02-28,Software Licence,Meridian Cloud Services Ltd,INV-66889,Licence fee,34320
+JE-100092,LME-P004,2026-02-28,Hardware,Pennine Infrastructure Ltd,INV-27420,Hardware purchase,23820
+JE-100093,LME-P004,2026-02-28,Training,Skillbridge Training Ltd,INV-20778,Training,7000
+JE-100094,LME-P004,2026-02-28,Other,Various suppliers,INV-93276,Other project cost,4820
+JE-100095,LME-P005,2026-02-28,Contractor,Ellis and Marsh Advisory LLP,INV-65061,Contractor invoice,59240
+JE-100096,LME-P005,2026-02-28,Contractor,Brightwell Consulting Ltd,INV-29581,Contractor invoice,45520
+JE-100097,LME-P005,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,62180
+JE-100098,LME-P005,2026-02-28,Software Licence,Fathom Software Ltd,INV-34465,Licence fee,81410
+JE-100099,LME-P005,2026-02-28,Training,Learning Works Ltd,INV-59612,Training,8230
+JE-100100,LME-P005,2026-02-28,Other,Travel and expenses,INV-16191,Other project cost,5350
+JE-100101,LME-P006,2026-02-28,Contractor,Larch Technology Ltd,INV-12002,Contractor invoice,42210
+JE-100102,LME-P006,2026-02-28,Contractor,Orchard Digital Ltd,INV-61902,Contractor invoice,33000
+JE-100103,LME-P006,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,55330
+JE-100104,LME-P006,2026-02-28,Software Licence,Quayside Software Ltd,INV-10105,Licence fee,19460
+JE-100105,LME-P006,2026-02-28,Training,Learning Works Ltd,INV-79019,Training,7650
+JE-100106,LME-P006,2026-02-28,Other,Various suppliers,INV-68722,Other project cost,4760
+JE-100107,LME-P007,2026-02-28,Contractor,Brightwell Consulting Ltd,INV-51001,Contractor invoice,58520
+JE-100108,LME-P007,2026-02-28,Contractor,Orchard Digital Ltd,INV-68281,Contractor invoice,59420
+JE-100109,LME-P007,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,75890
+JE-100110,LME-P007,2026-02-28,Software Licence,Fathom Software Ltd,INV-57074,Licence fee,24000
+JE-100111,LME-P007,2026-02-28,Training,Learning Works Ltd,INV-71259,Training,12540
+JE-100112,LME-P007,2026-02-28,Other,Travel and expenses,INV-23300,Other project cost,12300
+JE-100113,LME-P008,2026-02-28,Contractor,Harlow Data Services Ltd,INV-32009,Contractor invoice,39640
+JE-100114,LME-P008,2026-02-28,Contractor,Corvus Technology Ltd,INV-76004,Contractor invoice,30720
+JE-100115,LME-P008,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,50280
+JE-100116,LME-P008,2026-02-28,Software Licence,Quayside Software Ltd,INV-11934,Licence fee,16660
+JE-100117,LME-P008,2026-02-28,Training,Learning Works Ltd,INV-69429,Training,12800
+JE-100118,LME-P008,2026-02-28,Other,Various suppliers,INV-55589,Other project cost,11100
+JE-100119,LME-P009,2026-02-28,Contractor,Corvus Technology Ltd,INV-44526,Contractor invoice,79300
+JE-100120,LME-P009,2026-02-28,Contractor,Orchard Digital Ltd,INV-87432,Contractor invoice,43270
+JE-100121,LME-P009,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,43020
+JE-100122,LME-P009,2026-02-28,Software Licence,Fathom Software Ltd,INV-12223,Licence fee,41130
+JE-100123,LME-P009,2026-02-28,Hardware,Pennine Infrastructure Ltd,INV-75266,Hardware purchase,194270
+JE-100124,LME-P009,2026-02-28,Training,Skillbridge Training Ltd,INV-78108,Training,9030
+JE-100125,LME-P009,2026-02-28,Other,Travel and expenses,INV-91893,Other project cost,13330
+JE-100126,LME-P010,2026-02-28,Contractor,Ellis and Marsh Advisory LLP,INV-37154,Contractor invoice,95500
+JE-100127,LME-P010,2026-02-28,Contractor,Corvus Technology Ltd,INV-81345,Contractor invoice,82300
+JE-100128,LME-P010,2026-02-28,Internal Labour,Internal payroll recharge,,Payroll recharge,41100
+JE-100129,LME-P010,2026-02-28,Software Licence,Meridian Cloud Services Ltd,INV-94234,Licence fee,59510
+JE-100130,LME-P010,2026-02-28,Hardware,Pennine Infrastructure Ltd,INV-39853,Hardware purchase,136960
+JE-100131,LME-P010,2026-02-28,Training,Skillbridge Training Ltd,INV-83365,Training,8870
+JE-100132,LME-P010,2026-02-28,Other,Travel and expenses,INV-52281,Other project cost,12370
+JE-100133,LME-P001,2026-03-31,Contractor,Larch Technology Ltd,INV-50206,Contractor invoice,201760
+JE-100134,LME-P001,2026-03-31,Contractor,Ellis and Marsh Advisory LLP,INV-90896,Contractor invoice,189500
+JE-100135,LME-P001,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,166690
+JE-100136,LME-P001,2026-03-31,Software Licence,Meridian Cloud Services Ltd,INV-21713,Licence fee,120440
+JE-100137,LME-P001,2026-03-31,Hardware,Delta Quay Networks Ltd,INV-24931,Hardware purchase,80930
+JE-100138,LME-P001,2026-03-31,Training,Learning Works Ltd,INV-50208,Training,16280
+JE-100139,LME-P001,2026-03-31,Other,Various suppliers,INV-22295,Other project cost,21880
+JE-100140,LME-P002,2026-03-31,Contractor,Larch Technology Ltd,INV-30945,Contractor invoice,77460
+JE-100141,LME-P002,2026-03-31,Contractor,Orchard Digital Ltd,INV-33335,Contractor invoice,66080
+JE-100142,LME-P002,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,75780
+JE-100143,LME-P002,2026-03-31,Software Licence,Quayside Software Ltd,INV-93386,Licence fee,61580
+JE-100144,LME-P002,2026-03-31,Hardware,Pennine Infrastructure Ltd,INV-87492,Hardware purchase,15090
+JE-100145,LME-P002,2026-03-31,Training,Skillbridge Training Ltd,INV-81376,Training,6710
+JE-100146,LME-P002,2026-03-31,Other,Various suppliers,INV-19381,Other project cost,9900
+JE-100147,LME-P003,2026-03-31,Contractor,Larch Technology Ltd,INV-19551,Contractor invoice,150100
+JE-100148,LME-P003,2026-03-31,Contractor,Ellis and Marsh Advisory LLP,INV-44646,Contractor invoice,156400
+JE-100149,LME-P003,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,86100
+JE-100150,LME-P003,2026-03-31,Software Licence,Fathom Software Ltd,INV-46142,Licence fee,84590
+JE-100151,LME-P003,2026-03-31,Hardware,Delta Quay Networks Ltd,INV-70032,Hardware purchase,57800
+JE-100152,LME-P003,2026-03-31,Training,Skillbridge Training Ltd,INV-98953,Training,11070
+JE-100153,LME-P003,2026-03-31,Other,Travel and expenses,INV-86990,Other project cost,18170
+JE-100154,LME-P004,2026-03-31,Contractor,Harlow Data Services Ltd,INV-63045,Contractor invoice,75460
+JE-100155,LME-P004,2026-03-31,Contractor,Harlow Data Services Ltd,INV-67993,Contractor invoice,50950
+JE-100156,LME-P004,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,47450
+JE-100157,LME-P004,2026-03-31,Software Licence,Meridian Cloud Services Ltd,INV-70235,Licence fee,34990
+JE-100158,LME-P004,2026-03-31,Hardware,Delta Quay Networks Ltd,INV-55359,Hardware purchase,24040
+JE-100159,LME-P004,2026-03-31,Training,Learning Works Ltd,INV-46571,Training,7320
+JE-100160,LME-P004,2026-03-31,Other,Travel and expenses,INV-62169,Other project cost,4400
+JE-100161,LME-P005,2026-03-31,Contractor,Ellis and Marsh Advisory LLP,INV-23489,Contractor invoice,68790
+JE-100162,LME-P005,2026-03-31,Contractor,Ellis and Marsh Advisory LLP,INV-78872,Contractor invoice,53230
+JE-100163,LME-P005,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,75610
+JE-100164,LME-P005,2026-03-31,Software Licence,Fathom Software Ltd,INV-53697,Licence fee,92240
+JE-100165,LME-P005,2026-03-31,Training,Skillbridge Training Ltd,INV-74758,Training,9480
+JE-100166,LME-P005,2026-03-31,Other,Various suppliers,INV-51475,Other project cost,6120
+JE-100167,LME-P006,2026-03-31,Contractor,Harlow Data Services Ltd,INV-66475,Contractor invoice,47090
+JE-100168,LME-P006,2026-03-31,Contractor,Harlow Data Services Ltd,INV-84762,Contractor invoice,35200
+JE-100169,LME-P006,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,63120
+JE-100170,LME-P006,2026-03-31,Software Licence,Meridian Cloud Services Ltd,INV-86851,Licence fee,21620
+JE-100171,LME-P006,2026-03-31,Training,Skillbridge Training Ltd,INV-57923,Training,8700
+JE-100172,LME-P006,2026-03-31,Other,Travel and expenses,INV-73530,Other project cost,5360
+JE-100173,LME-P007,2026-03-31,Contractor,Larch Technology Ltd,INV-61946,Contractor invoice,60380
+JE-100174,LME-P007,2026-03-31,Contractor,Corvus Technology Ltd,INV-95189,Contractor invoice,71560
+JE-100175,LME-P007,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,78200
+JE-100176,LME-P007,2026-03-31,Software Licence,Meridian Cloud Services Ltd,INV-74874,Licence fee,27790
+JE-100177,LME-P007,2026-03-31,Training,Skillbridge Training Ltd,INV-91957,Training,13530
+JE-100178,LME-P007,2026-03-31,Other,Various suppliers,INV-46725,Other project cost,13790
+JE-100179,LME-P008,2026-03-31,Contractor,Harlow Data Services Ltd,INV-39441,Contractor invoice,36510
+JE-100180,LME-P008,2026-03-31,Contractor,Brightwell Consulting Ltd,INV-16393,Contractor invoice,32020
+JE-100181,LME-P008,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,49520
+JE-100182,LME-P008,2026-03-31,Software Licence,Quayside Software Ltd,INV-44246,Licence fee,15310
+JE-100183,LME-P008,2026-03-31,Training,Learning Works Ltd,INV-47207,Training,12970
+JE-100184,LME-P008,2026-03-31,Other,Travel and expenses,INV-86196,Other project cost,11430
+JE-100185,LME-P009,2026-03-31,Contractor,Brightwell Consulting Ltd,INV-78914,Contractor invoice,98540
+JE-100186,LME-P009,2026-03-31,Contractor,Corvus Technology Ltd,INV-48140,Contractor invoice,67780
+JE-100187,LME-P009,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,52430
+JE-100188,LME-P009,2026-03-31,Software Licence,Meridian Cloud Services Ltd,INV-30844,Licence fee,47590
+JE-100189,LME-P009,2026-03-31,Hardware,Delta Quay Networks Ltd,INV-48784,Hardware purchase,234180
+JE-100190,LME-P009,2026-03-31,Training,Learning Works Ltd,INV-46118,Training,9870
+JE-100191,LME-P009,2026-03-31,Other,Various suppliers,INV-72880,Other project cost,14610
+JE-100192,LME-P010,2026-03-31,Contractor,Harlow Data Services Ltd,INV-60752,Contractor invoice,118110
+JE-100193,LME-P010,2026-03-31,Contractor,Corvus Technology Ltd,INV-21708,Contractor invoice,69680
+JE-100194,LME-P010,2026-03-31,Internal Labour,Internal payroll recharge,,Payroll recharge,48930
+JE-100195,LME-P010,2026-03-31,Software Licence,Fathom Software Ltd,INV-98563,Licence fee,72520
+JE-100196,LME-P010,2026-03-31,Hardware,Delta Quay Networks Ltd,INV-78806,Hardware purchase,143520
+JE-100197,LME-P010,2026-03-31,Training,Skillbridge Training Ltd,INV-88564,Training,10310
+JE-100198,LME-P010,2026-03-31,Other,Travel and expenses,INV-83204,Other project cost,14110
+JE-100199,LME-P001,2026-04-30,Contractor,Harlow Data Services Ltd,INV-51554,Contractor invoice,21520
+JE-100200,LME-P001,2026-04-30,Contractor,Harlow Data Services Ltd,INV-64958,Contractor invoice,24400
+JE-100201,LME-P001,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,190900
+JE-100202,LME-P001,2026-04-30,Software Licence,Quayside Software Ltd,INV-78023,Licence fee,147320
+JE-100203,LME-P001,2026-04-30,Hardware,Granite Hardware Ltd,INV-92028,Hardware purchase,90640
+JE-100204,LME-P001,2026-04-30,Training,Skillbridge Training Ltd,INV-17292,Training,19440
+JE-100205,LME-P001,2026-04-30,Other,Various suppliers,INV-14549,Other project cost,27020
+JE-100206,LME-P002,2026-04-30,Contractor,Harlow Data Services Ltd,INV-71133,Contractor invoice,69190
+JE-100207,LME-P002,2026-04-30,Contractor,Larch Technology Ltd,INV-32397,Contractor invoice,63610
+JE-100208,LME-P002,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,77200
+JE-100209,LME-P002,2026-04-30,Software Licence,Quayside Software Ltd,INV-13195,Licence fee,62230
+JE-100210,LME-P002,2026-04-30,Hardware,Delta Quay Networks Ltd,INV-27438,Hardware purchase,15720
+JE-100211,LME-P002,2026-04-30,Training,Learning Works Ltd,INV-18130,Training,6230
+JE-100212,LME-P002,2026-04-30,Other,Travel and expenses,INV-66794,Other project cost,9190
+JE-100213,LME-P003,2026-04-30,Contractor,Brightwell Consulting Ltd,INV-81179,Contractor invoice,220990
+JE-100214,LME-P003,2026-04-30,Contractor,Corvus Technology Ltd,INV-76764,Contractor invoice,132910
+JE-100215,LME-P003,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,95420
+JE-100216,LME-P003,2026-04-30,Software Licence,Fathom Software Ltd,INV-39227,Licence fee,102360
+JE-100217,LME-P003,2026-04-30,Hardware,Pennine Infrastructure Ltd,INV-96519,Hardware purchase,65400
+JE-100218,LME-P003,2026-04-30,Training,Learning Works Ltd,INV-64672,Training,13450
+JE-100219,LME-P003,2026-04-30,Other,Various suppliers,INV-84860,Other project cost,18050
+JE-100220,LME-P004,2026-04-30,Contractor,Ellis and Marsh Advisory LLP,INV-47007,Contractor invoice,70840
+JE-100221,LME-P004,2026-04-30,Contractor,Larch Technology Ltd,INV-16309,Contractor invoice,49110
+JE-100222,LME-P004,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,47210
+JE-100223,LME-P004,2026-04-30,Software Licence,Quayside Software Ltd,INV-42650,Licence fee,36560
+JE-100224,LME-P004,2026-04-30,Hardware,Delta Quay Networks Ltd,INV-27367,Hardware purchase,24160
+JE-100225,LME-P004,2026-04-30,Training,Skillbridge Training Ltd,INV-40461,Training,6860
+JE-100226,LME-P004,2026-04-30,Other,Various suppliers,INV-40612,Other project cost,4890
+JE-100227,LME-P005,2026-04-30,Contractor,Orchard Digital Ltd,INV-71282,Contractor invoice,70920
+JE-100228,LME-P005,2026-04-30,Contractor,Orchard Digital Ltd,INV-88411,Contractor invoice,47790
+JE-100229,LME-P005,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,81850
+JE-100230,LME-P005,2026-04-30,Software Licence,Quayside Software Ltd,INV-80222,Licence fee,91860
+JE-100231,LME-P005,2026-04-30,Training,Skillbridge Training Ltd,INV-73256,Training,9440
+JE-100232,LME-P005,2026-04-30,Other,Various suppliers,INV-10958,Other project cost,6670
+JE-100233,LME-P006,2026-04-30,Contractor,Harlow Data Services Ltd,INV-91813,Contractor invoice,37410
+JE-100234,LME-P006,2026-04-30,Contractor,Larch Technology Ltd,INV-41424,Contractor invoice,40830
+JE-100235,LME-P006,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,61340
+JE-100236,LME-P006,2026-04-30,Software Licence,Fathom Software Ltd,INV-79313,Licence fee,19740
+JE-100237,LME-P006,2026-04-30,Training,Skillbridge Training Ltd,INV-64504,Training,8800
+JE-100238,LME-P006,2026-04-30,Other,Travel and expenses,INV-95369,Other project cost,5660
+JE-100239,LME-P007,2026-04-30,Contractor,Ellis and Marsh Advisory LLP,INV-35080,Contractor invoice,78950
+JE-100240,LME-P007,2026-04-30,Contractor,Larch Technology Ltd,INV-30411,Contractor invoice,70000
+JE-100241,LME-P007,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,77430
+JE-100242,LME-P007,2026-04-30,Software Licence,Meridian Cloud Services Ltd,INV-58451,Licence fee,27680
+JE-100243,LME-P007,2026-04-30,Training,Skillbridge Training Ltd,INV-27490,Training,14850
+JE-100244,LME-P007,2026-04-30,Other,Travel and expenses,INV-20909,Other project cost,13690
+JE-100245,LME-P008,2026-04-30,Contractor,Ellis and Marsh Advisory LLP,INV-87014,Contractor invoice,41040
+JE-100246,LME-P008,2026-04-30,Contractor,Larch Technology Ltd,INV-33938,Contractor invoice,22460
+JE-100247,LME-P008,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,52090
+JE-100248,LME-P008,2026-04-30,Software Licence,Fathom Software Ltd,INV-99467,Licence fee,16970
+JE-100249,LME-P008,2026-04-30,Training,Learning Works Ltd,INV-57305,Training,13300
+JE-100250,LME-P008,2026-04-30,Other,Travel and expenses,INV-41020,Other project cost,11180
+JE-100251,LME-P009,2026-04-30,Contractor,Brightwell Consulting Ltd,INV-81462,Contractor invoice,89640
+JE-100252,LME-P009,2026-04-30,Contractor,Harlow Data Services Ltd,INV-75772,Contractor invoice,109520
+JE-100253,LME-P009,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,72010
+JE-100254,LME-P009,2026-04-30,Software Licence,Quayside Software Ltd,INV-47310,Licence fee,66140
+JE-100255,LME-P009,2026-04-30,Hardware,Granite Hardware Ltd,INV-60554,Hardware purchase,305550
+JE-100256,LME-P009,2026-04-30,Training,Skillbridge Training Ltd,INV-60413,Training,12550
+JE-100257,LME-P009,2026-04-30,Other,Travel and expenses,INV-15303,Other project cost,20580
+JE-100258,LME-P010,2026-04-30,Contractor,Brightwell Consulting Ltd,INV-44128,Contractor invoice,101270
+JE-100259,LME-P010,2026-04-30,Contractor,Larch Technology Ltd,INV-88377,Contractor invoice,93810
+JE-100260,LME-P010,2026-04-30,Internal Labour,Internal payroll recharge,,Payroll recharge,48800
+JE-100261,LME-P010,2026-04-30,Software Licence,Quayside Software Ltd,INV-67342,Licence fee,74610
+JE-100262,LME-P010,2026-04-30,Hardware,Pennine Infrastructure Ltd,INV-68568,Hardware purchase,140040
+JE-100263,LME-P010,2026-04-30,Training,Skillbridge Training Ltd,INV-60879,Training,9340
+JE-100264,LME-P010,2026-04-30,Other,Travel and expenses,INV-98588,Other project cost,14560
+JE-100265,LME-P001,2026-05-31,Contractor,Ellis and Marsh Advisory LLP,INV-66511,Contractor invoice,30820
+JE-100266,LME-P001,2026-05-31,Contractor,Brightwell Consulting Ltd,INV-68103,Contractor invoice,24470
+JE-100267,LME-P001,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,220250
+JE-100268,LME-P001,2026-05-31,Software Licence,Quayside Software Ltd,INV-20389,Licence fee,162640
+JE-100269,LME-P001,2026-05-31,Hardware,Granite Hardware Ltd,INV-10347,Hardware purchase,108800
+JE-100270,LME-P001,2026-05-31,Training,Learning Works Ltd,INV-17862,Training,21540
+JE-100271,LME-P001,2026-05-31,Other,Various suppliers,INV-61738,Other project cost,29840
+JE-100272,LME-P002,2026-05-31,Contractor,Ellis and Marsh Advisory LLP,INV-65444,Contractor invoice,96840
+JE-100273,LME-P002,2026-05-31,Contractor,Larch Technology Ltd,INV-11430,Contractor invoice,53170
+JE-100274,LME-P002,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,80170
+JE-100275,LME-P002,2026-05-31,Software Licence,Quayside Software Ltd,INV-42050,Licence fee,67570
+JE-100276,LME-P002,2026-05-31,Hardware,Delta Quay Networks Ltd,INV-97222,Hardware purchase,14330
+JE-100277,LME-P002,2026-05-31,Training,Learning Works Ltd,INV-22464,Training,6080
+JE-100278,LME-P002,2026-05-31,Other,Various suppliers,INV-24835,Other project cost,9080
+JE-100279,LME-P003,2026-05-31,Contractor,Orchard Digital Ltd,INV-99164,Contractor invoice,197890
+JE-100280,LME-P003,2026-05-31,Contractor,Harlow Data Services Ltd,INV-49545,Contractor invoice,186090
+JE-100281,LME-P003,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,94360
+JE-100282,LME-P003,2026-05-31,Software Licence,Fathom Software Ltd,INV-38384,Licence fee,97120
+JE-100283,LME-P003,2026-05-31,Hardware,Granite Hardware Ltd,INV-70428,Hardware purchase,65370
+JE-100284,LME-P003,2026-05-31,Training,Skillbridge Training Ltd,INV-67382,Training,12720
+JE-100285,LME-P003,2026-05-31,Other,Travel and expenses,INV-24675,Other project cost,18940
+JE-100286,LME-P004,2026-05-31,Contractor,Corvus Technology Ltd,INV-81346,Contractor invoice,67260
+JE-100287,LME-P004,2026-05-31,Contractor,Brightwell Consulting Ltd,INV-82168,Contractor invoice,48310
+JE-100288,LME-P004,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,48710
+JE-100289,LME-P004,2026-05-31,Software Licence,Quayside Software Ltd,INV-87473,Licence fee,37330
+JE-100290,LME-P004,2026-05-31,Hardware,Pennine Infrastructure Ltd,INV-15063,Hardware purchase,23410
+JE-100291,LME-P004,2026-05-31,Training,Skillbridge Training Ltd,INV-53945,Training,6950
+JE-100292,LME-P004,2026-05-31,Other,Travel and expenses,INV-53602,Other project cost,4500
+JE-100293,LME-P005,2026-05-31,Contractor,Harlow Data Services Ltd,INV-49613,Contractor invoice,86130
+JE-100294,LME-P005,2026-05-31,Contractor,Harlow Data Services Ltd,INV-31913,Contractor invoice,60590
+JE-100295,LME-P005,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,91190
+JE-100296,LME-P005,2026-05-31,Software Licence,Meridian Cloud Services Ltd,INV-86369,Licence fee,104550
+JE-100297,LME-P005,2026-05-31,Training,Learning Works Ltd,INV-37686,Training,10220
+JE-100298,LME-P005,2026-05-31,Other,Travel and expenses,INV-38123,Other project cost,7390
+JE-100299,LME-P006,2026-05-31,Contractor,Ellis and Marsh Advisory LLP,INV-19443,Contractor invoice,41640
+JE-100300,LME-P006,2026-05-31,Contractor,Larch Technology Ltd,INV-12716,Contractor invoice,42450
+JE-100301,LME-P006,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,57350
+JE-100302,LME-P006,2026-05-31,Software Licence,Quayside Software Ltd,INV-65829,Licence fee,23380
+JE-100303,LME-P006,2026-05-31,Training,Skillbridge Training Ltd,INV-80390,Training,8950
+JE-100304,LME-P006,2026-05-31,Other,Various suppliers,INV-50727,Other project cost,5560
+JE-100305,LME-P007,2026-05-31,Contractor,Brightwell Consulting Ltd,INV-29854,Contractor invoice,90500
+JE-100306,LME-P007,2026-05-31,Contractor,Larch Technology Ltd,INV-54828,Contractor invoice,48770
+JE-100307,LME-P007,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,82800
+JE-100308,LME-P007,2026-05-31,Software Licence,Fathom Software Ltd,INV-87854,Licence fee,28960
+JE-100309,LME-P007,2026-05-31,Training,Skillbridge Training Ltd,INV-64761,Training,14410
+JE-100310,LME-P007,2026-05-31,Other,Travel and expenses,INV-69157,Other project cost,14410
+JE-100311,LME-P008,2026-05-31,Contractor,Brightwell Consulting Ltd,INV-91258,Contractor invoice,42450
+JE-100312,LME-P008,2026-05-31,Contractor,Orchard Digital Ltd,INV-76044,Contractor invoice,27670
+JE-100313,LME-P008,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,47520
+JE-100314,LME-P008,2026-05-31,Software Licence,Meridian Cloud Services Ltd,INV-51297,Licence fee,15860
+JE-100315,LME-P008,2026-05-31,Training,Learning Works Ltd,INV-98461,Training,13780
+JE-100316,LME-P008,2026-05-31,Other,Various suppliers,INV-45608,Other project cost,10120
+JE-100317,LME-P009,2026-05-31,Contractor,Brightwell Consulting Ltd,INV-68793,Contractor invoice,139830
+JE-100318,LME-P009,2026-05-31,Contractor,Ellis and Marsh Advisory LLP,INV-28388,Contractor invoice,95750
+JE-100319,LME-P009,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,77800
+JE-100320,LME-P009,2026-05-31,Software Licence,Fathom Software Ltd,INV-87874,Licence fee,77120
+JE-100321,LME-P009,2026-05-31,Hardware,Pennine Infrastructure Ltd,INV-90077,Hardware purchase,328700
+JE-100322,LME-P009,2026-05-31,Training,Learning Works Ltd,INV-93868,Training,15520
+JE-100323,LME-P009,2026-05-31,Other,Travel and expenses,INV-74718,Other project cost,23200
+JE-100324,LME-P010,2026-05-31,Contractor,Corvus Technology Ltd,INV-71935,Contractor invoice,105120
+JE-100325,LME-P010,2026-05-31,Contractor,Brightwell Consulting Ltd,INV-31064,Contractor invoice,108280
+JE-100326,LME-P010,2026-05-31,Internal Labour,Internal payroll recharge,,Payroll recharge,54760
+JE-100327,LME-P010,2026-05-31,Software Licence,Fathom Software Ltd,INV-19418,Licence fee,85420
+JE-100328,LME-P010,2026-05-31,Hardware,Pennine Infrastructure Ltd,INV-97567,Hardware purchase,157070
+JE-100329,LME-P010,2026-05-31,Training,Learning Works Ltd,INV-15991,Training,11320
+JE-100330,LME-P010,2026-05-31,Other,Various suppliers,INV-76725,Other project cost,15170
+JE-100331,LME-P001,2026-06-30,Contractor,Orchard Digital Ltd,INV-60776,Contractor invoice,26300
+JE-100332,LME-P001,2026-06-30,Contractor,Brightwell Consulting Ltd,INV-59262,Contractor invoice,30840
+JE-100333,LME-P001,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,214570
+JE-100334,LME-P001,2026-06-30,Software Licence,Fathom Software Ltd,INV-92670,Licence fee,165970
+JE-100335,LME-P001,2026-06-30,Hardware,Pennine Infrastructure Ltd,INV-26669,Hardware purchase,107690
+JE-100336,LME-P001,2026-06-30,Training,Learning Works Ltd,INV-30143,Training,21810
+JE-100337,LME-P001,2026-06-30,Other,Travel and expenses,INV-47538,Other project cost,33630
+JE-100338,LME-P002,2026-06-30,Contractor,Harlow Data Services Ltd,INV-55101,Contractor invoice,100650
+JE-100339,LME-P002,2026-06-30,Contractor,Harlow Data Services Ltd,INV-49424,Contractor invoice,59310
+JE-100340,LME-P002,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,88350
+JE-100341,LME-P002,2026-06-30,Software Licence,Quayside Software Ltd,INV-76704,Licence fee,67420
+JE-100342,LME-P002,2026-06-30,Hardware,Delta Quay Networks Ltd,INV-72518,Hardware purchase,19040
+JE-100343,LME-P002,2026-06-30,Training,Learning Works Ltd,INV-45147,Training,6920
+JE-100344,LME-P002,2026-06-30,Other,Travel and expenses,INV-67167,Other project cost,10840
+JE-100345,LME-P003,2026-06-30,Contractor,Corvus Technology Ltd,INV-61644,Contractor invoice,214070
+JE-100346,LME-P003,2026-06-30,Contractor,Corvus Technology Ltd,INV-76914,Contractor invoice,127610
+JE-100347,LME-P003,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,107940
+JE-100348,LME-P003,2026-06-30,Software Licence,Meridian Cloud Services Ltd,INV-20643,Licence fee,101380
+JE-100349,LME-P003,2026-06-30,Hardware,Pennine Infrastructure Ltd,INV-15690,Hardware purchase,64350
+JE-100350,LME-P003,2026-06-30,Training,Learning Works Ltd,INV-78424,Training,12450
+JE-100351,LME-P003,2026-06-30,Other,Various suppliers,INV-76766,Other project cost,18160
+JE-100352,LME-P004,2026-06-30,Contractor,Orchard Digital Ltd,INV-39894,Contractor invoice,56930
+JE-100353,LME-P004,2026-06-30,Contractor,Larch Technology Ltd,INV-86563,Contractor invoice,57870
+JE-100354,LME-P004,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,44320
+JE-100355,LME-P004,2026-06-30,Software Licence,Meridian Cloud Services Ltd,INV-63113,Licence fee,36230
+JE-100356,LME-P004,2026-06-30,Hardware,Delta Quay Networks Ltd,INV-34966,Hardware purchase,23710
+JE-100357,LME-P004,2026-06-30,Training,Skillbridge Training Ltd,INV-58312,Training,7190
+JE-100358,LME-P004,2026-06-30,Other,Various suppliers,INV-65284,Other project cost,4620
+JE-100359,LME-P005,2026-06-30,Contractor,Ellis and Marsh Advisory LLP,INV-66199,Contractor invoice,71750
+JE-100360,LME-P005,2026-06-30,Contractor,Brightwell Consulting Ltd,INV-26576,Contractor invoice,65040
+JE-100361,LME-P005,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,92580
+JE-100362,LME-P005,2026-06-30,Software Licence,Quayside Software Ltd,INV-10663,Licence fee,100200
+JE-100363,LME-P005,2026-06-30,Training,Learning Works Ltd,INV-90381,Training,10810
+JE-100364,LME-P005,2026-06-30,Other,Travel and expenses,INV-45917,Other project cost,6480
+JE-100365,LME-P006,2026-06-30,Contractor,Ellis and Marsh Advisory LLP,INV-71146,Contractor invoice,37400
+JE-100366,LME-P006,2026-06-30,Contractor,Brightwell Consulting Ltd,INV-48086,Contractor invoice,40270
+JE-100367,LME-P006,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,65450
+JE-100368,LME-P006,2026-06-30,Software Licence,Fathom Software Ltd,INV-86774,Licence fee,22330
+JE-100369,LME-P006,2026-06-30,Training,Skillbridge Training Ltd,INV-68881,Training,9030
+JE-100370,LME-P006,2026-06-30,Other,Various suppliers,INV-55191,Other project cost,5590
+JE-100371,LME-P007,2026-06-30,Contractor,Corvus Technology Ltd,INV-36097,Contractor invoice,66650
+JE-100372,LME-P007,2026-06-30,Contractor,Larch Technology Ltd,INV-55706,Contractor invoice,61540
+JE-100373,LME-P007,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,80690
+JE-100374,LME-P007,2026-06-30,Software Licence,Fathom Software Ltd,INV-76642,Licence fee,28390
+JE-100375,LME-P007,2026-06-30,Training,Skillbridge Training Ltd,INV-11176,Training,14100
+JE-100376,LME-P007,2026-06-30,Other,Various suppliers,INV-15274,Other project cost,13810
+JE-100377,LME-P008,2026-06-30,Contractor,Corvus Technology Ltd,INV-96458,Contractor invoice,46390
+JE-100378,LME-P008,2026-06-30,Contractor,Larch Technology Ltd,INV-60698,Contractor invoice,30200
+JE-100379,LME-P008,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,48160
+JE-100380,LME-P008,2026-06-30,Software Licence,Fathom Software Ltd,INV-62657,Licence fee,16690
+JE-100381,LME-P008,2026-06-30,Training,Skillbridge Training Ltd,INV-10221,Training,14080
+JE-100382,LME-P008,2026-06-30,Other,Travel and expenses,INV-78599,Other project cost,10730
+JE-100383,LME-P009,2026-06-30,Contractor,Harlow Data Services Ltd,INV-13903,Contractor invoice,135130
+JE-100384,LME-P009,2026-06-30,Contractor,Corvus Technology Ltd,INV-53469,Contractor invoice,126180
+JE-100385,LME-P009,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,82900
+JE-100386,LME-P009,2026-06-30,Software Licence,Fathom Software Ltd,INV-90413,Licence fee,82310
+JE-100387,LME-P009,2026-06-30,Hardware,Delta Quay Networks Ltd,INV-29061,Hardware purchase,389050
+JE-100388,LME-P009,2026-06-30,Training,Learning Works Ltd,INV-59835,Training,16360
+JE-100389,LME-P009,2026-06-30,Other,Various suppliers,INV-83073,Other project cost,24140
+JE-100390,LME-P010,2026-06-30,Contractor,Ellis and Marsh Advisory LLP,INV-47073,Contractor invoice,141840
+JE-100391,LME-P010,2026-06-30,Contractor,Brightwell Consulting Ltd,INV-45260,Contractor invoice,83780
+JE-100392,LME-P010,2026-06-30,Internal Labour,Internal payroll recharge,,Payroll recharge,54180
+JE-100393,LME-P010,2026-06-30,Software Licence,Fathom Software Ltd,INV-99359,Licence fee,86800
+JE-100394,LME-P010,2026-06-30,Hardware,Granite Hardware Ltd,INV-64276,Hardware purchase,167120
+JE-100395,LME-P010,2026-06-30,Training,Skillbridge Training Ltd,INV-79041,Training,10890
+JE-100396,LME-P010,2026-06-30,Other,Travel and expenses,INV-58097,Other project cost,16200
+JE-100397,LME-P001,2026-07-31,Contractor,Brightwell Consulting Ltd,INV-14013,Contractor invoice,328180
+JE-100398,LME-P001,2026-07-31,Contractor,Harlow Data Services Ltd,INV-66618,Contractor invoice,211490
+JE-100399,LME-P001,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,212200
+JE-100400,LME-P001,2026-07-31,Software Licence,Fathom Software Ltd,INV-85572,Licence fee,158080
+JE-100401,LME-P001,2026-07-31,Hardware,Delta Quay Networks Ltd,INV-97971,Hardware purchase,108370
+JE-100402,LME-P001,2026-07-31,Training,Skillbridge Training Ltd,INV-31474,Training,20730
+JE-100403,LME-P001,2026-07-31,Other,Travel and expenses,INV-94030,Other project cost,31570
+JE-100404,LME-P002,2026-07-31,Contractor,Brightwell Consulting Ltd,INV-75051,Contractor invoice,94170
+JE-100405,LME-P002,2026-07-31,Contractor,Orchard Digital Ltd,INV-50330,Contractor invoice,61980
+JE-100406,LME-P002,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,88060
+JE-100407,LME-P002,2026-07-31,Software Licence,Meridian Cloud Services Ltd,INV-77020,Licence fee,76220
+JE-100408,LME-P002,2026-07-31,Hardware,Delta Quay Networks Ltd,INV-41826,Hardware purchase,17730
+JE-100409,LME-P002,2026-07-31,Training,Learning Works Ltd,INV-32300,Training,7050
+JE-100410,LME-P002,2026-07-31,Other,Travel and expenses,INV-61146,Other project cost,10520
+JE-100411,LME-P003,2026-07-31,Contractor,Brightwell Consulting Ltd,INV-54097,Contractor invoice,207100
+JE-100412,LME-P003,2026-07-31,Contractor,Harlow Data Services Ltd,INV-72844,Contractor invoice,132710
+JE-100413,LME-P003,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,99990
+JE-100414,LME-P003,2026-07-31,Software Licence,Quayside Software Ltd,INV-47590,Licence fee,95590
+JE-100415,LME-P003,2026-07-31,Hardware,Granite Hardware Ltd,INV-42111,Hardware purchase,65710
+JE-100416,LME-P003,2026-07-31,Training,Learning Works Ltd,INV-19480,Training,13050
+JE-100417,LME-P003,2026-07-31,Other,Various suppliers,INV-75693,Other project cost,18640
+JE-100418,LME-P004,2026-07-31,Contractor,Orchard Digital Ltd,INV-85211,Contractor invoice,58740
+JE-100419,LME-P004,2026-07-31,Contractor,Larch Technology Ltd,INV-38932,Contractor invoice,66630
+JE-100420,LME-P004,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,53760
+JE-100421,LME-P004,2026-07-31,Software Licence,Meridian Cloud Services Ltd,INV-88024,Licence fee,40740
+JE-100422,LME-P004,2026-07-31,Hardware,Delta Quay Networks Ltd,INV-56810,Hardware purchase,26580
+JE-100423,LME-P004,2026-07-31,Training,Learning Works Ltd,INV-91529,Training,8040
+JE-100424,LME-P004,2026-07-31,Other,Various suppliers,INV-63266,Other project cost,5280
+JE-100425,LME-P005,2026-07-31,Contractor,Ellis and Marsh Advisory LLP,INV-66250,Contractor invoice,90500
+JE-100426,LME-P005,2026-07-31,Contractor,Harlow Data Services Ltd,INV-60805,Contractor invoice,61410
+JE-100427,LME-P005,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,82580
+JE-100428,LME-P005,2026-07-31,Software Licence,Meridian Cloud Services Ltd,INV-52108,Licence fee,107380
+JE-100429,LME-P005,2026-07-31,Training,Learning Works Ltd,INV-27592,Training,10510
+JE-100430,LME-P005,2026-07-31,Other,Various suppliers,INV-22204,Other project cost,6650
+JE-100431,LME-P006,2026-07-31,Contractor,Ellis and Marsh Advisory LLP,INV-95349,Contractor invoice,49730
+JE-100432,LME-P006,2026-07-31,Contractor,Orchard Digital Ltd,INV-10153,Contractor invoice,28350
+JE-100433,LME-P006,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,60410
+JE-100434,LME-P006,2026-07-31,Software Licence,Fathom Software Ltd,INV-96209,Licence fee,20940
+JE-100435,LME-P006,2026-07-31,Training,Skillbridge Training Ltd,INV-25659,Training,9040
+JE-100436,LME-P006,2026-07-31,Other,Various suppliers,INV-36362,Other project cost,5380
+JE-100437,LME-P007,2026-07-31,Contractor,Corvus Technology Ltd,INV-26751,Contractor invoice,72830
+JE-100438,LME-P007,2026-07-31,Contractor,Larch Technology Ltd,INV-84935,Contractor invoice,57230
+JE-100439,LME-P007,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,78790
+JE-100440,LME-P007,2026-07-31,Software Licence,Quayside Software Ltd,INV-43210,Licence fee,26400
+JE-100441,LME-P007,2026-07-31,Training,Skillbridge Training Ltd,INV-69343,Training,13950
+JE-100442,LME-P007,2026-07-31,Other,Travel and expenses,INV-40266,Other project cost,13410
+JE-100443,LME-P008,2026-07-31,Contractor,Ellis and Marsh Advisory LLP,INV-67704,Contractor invoice,32050
+JE-100444,LME-P008,2026-07-31,Contractor,Orchard Digital Ltd,INV-58903,Contractor invoice,32150
+JE-100445,LME-P008,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,45620
+JE-100446,LME-P008,2026-07-31,Software Licence,Meridian Cloud Services Ltd,INV-42291,Licence fee,13730
+JE-100447,LME-P008,2026-07-31,Training,Learning Works Ltd,INV-93024,Training,12030
+JE-100448,LME-P008,2026-07-31,Other,Travel and expenses,INV-92954,Other project cost,9850
+JE-100449,LME-P009,2026-07-31,Contractor,Brightwell Consulting Ltd,INV-99760,Contractor invoice,162470
+JE-100450,LME-P009,2026-07-31,Contractor,Harlow Data Services Ltd,INV-45916,Contractor invoice,89300
+JE-100451,LME-P009,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,89750
+JE-100452,LME-P009,2026-07-31,Software Licence,Quayside Software Ltd,INV-58103,Licence fee,81350
+JE-100453,LME-P009,2026-07-31,Hardware,Granite Hardware Ltd,INV-58475,Hardware purchase,379810
+JE-100454,LME-P009,2026-07-31,Training,Skillbridge Training Ltd,INV-34819,Training,17650
+JE-100455,LME-P009,2026-07-31,Other,Travel and expenses,INV-65397,Other project cost,24540
+JE-100456,LME-P010,2026-07-31,Contractor,Orchard Digital Ltd,INV-85330,Contractor invoice,104810
+JE-100457,LME-P010,2026-07-31,Contractor,Brightwell Consulting Ltd,INV-89255,Contractor invoice,119080
+JE-100458,LME-P010,2026-07-31,Internal Labour,Internal payroll recharge,,Payroll recharge,57480
+JE-100459,LME-P010,2026-07-31,Software Licence,Meridian Cloud Services Ltd,INV-15392,Licence fee,80030
+JE-100460,LME-P010,2026-07-31,Hardware,Pennine Infrastructure Ltd,INV-99659,Hardware purchase,163270
+JE-100461,LME-P010,2026-07-31,Training,Learning Works Ltd,INV-60465,Training,11110
+JE-100462,LME-P010,2026-07-31,Other,Travel and expenses,INV-97235,Other project cost,16640
+JE-100463,LME-P001,2026-07-31,Contractor,Accrual (Q2 contractor work),,Catch-up accrual: Q2 contractor work,1425000
+JE-100464,LME-P001,2026-08-31,Contractor,Orchard Digital Ltd,INV-47180,Contractor invoice,323100
+JE-100465,LME-P001,2026-08-31,Contractor,Corvus Technology Ltd,INV-71266,Contractor invoice,271220
+JE-100466,LME-P001,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,262760
+JE-100467,LME-P001,2026-08-31,Software Licence,Fathom Software Ltd,INV-75196,Licence fee,179260
+JE-100468,LME-P001,2026-08-31,Hardware,Pennine Infrastructure Ltd,INV-17603,Hardware purchase,116620
+JE-100469,LME-P001,2026-08-31,Training,Learning Works Ltd,INV-40530,Training,24690
+JE-100470,LME-P001,2026-08-31,Other,Various suppliers,INV-52677,Other project cost,36440
+JE-100471,LME-P002,2026-08-31,Contractor,Ellis and Marsh Advisory LLP,INV-13901,Contractor invoice,78560
+JE-100472,LME-P002,2026-08-31,Contractor,Harlow Data Services Ltd,INV-76593,Contractor invoice,83850
+JE-100473,LME-P002,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,86000
+JE-100474,LME-P002,2026-08-31,Software Licence,Quayside Software Ltd,INV-55497,Licence fee,72510
+JE-100475,LME-P002,2026-08-31,Hardware,Granite Hardware Ltd,INV-99513,Hardware purchase,17240
+JE-100476,LME-P002,2026-08-31,Training,Skillbridge Training Ltd,INV-42195,Training,7030
+JE-100477,LME-P002,2026-08-31,Other,Various suppliers,INV-12481,Other project cost,10410
+JE-100478,LME-P004,2026-08-31,Contractor,Arcadia Systems Ltd,INV-30417,Phase 2 delivery,240000
+JE-100479,LME-P003,2026-08-31,Contractor,Ellis and Marsh Advisory LLP,INV-94910,Contractor invoice,65070
+JE-100480,LME-P003,2026-08-31,Contractor,Larch Technology Ltd,INV-67434,Contractor invoice,72360
+JE-100481,LME-P003,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,94620
+JE-100482,LME-P003,2026-08-31,Software Licence,Quayside Software Ltd,INV-73911,Licence fee,96540
+JE-100483,LME-P003,2026-08-31,Hardware,Granite Hardware Ltd,INV-46312,Hardware purchase,65850
+JE-100484,LME-P003,2026-08-31,Training,Learning Works Ltd,INV-67322,Training,12770
+JE-100485,LME-P003,2026-08-31,Other,Various suppliers,INV-10922,Other project cost,19930
+JE-100486,LME-P004,2026-08-31,Contractor,Harlow Data Services Ltd,INV-13576,Contractor invoice,89340
+JE-100487,LME-P004,2026-08-31,Contractor,Larch Technology Ltd,INV-64973,Contractor invoice,49340
+JE-100488,LME-P004,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,48130
+JE-100489,LME-P004,2026-08-31,Software Licence,Quayside Software Ltd,INV-68440,Licence fee,38860
+JE-100490,LME-P004,2026-08-31,Hardware,Pennine Infrastructure Ltd,INV-44602,Hardware purchase,25090
+JE-100491,LME-P004,2026-08-31,Training,Learning Works Ltd,INV-20325,Training,8470
+JE-100492,LME-P004,2026-08-31,Other,Travel and expenses,INV-59201,Other project cost,5210
+JE-100493,LME-P005,2026-08-31,Contractor,Orchard Digital Ltd,INV-14197,Contractor invoice,69250
+JE-100494,LME-P005,2026-08-31,Contractor,Harlow Data Services Ltd,INV-50692,Contractor invoice,69070
+JE-100495,LME-P005,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,92880
+JE-100496,LME-P005,2026-08-31,Software Licence,Fathom Software Ltd,INV-63483,Licence fee,100780
+JE-100497,LME-P005,2026-08-31,Training,Skillbridge Training Ltd,INV-65383,Training,10300
+JE-100498,LME-P005,2026-08-31,Other,Various suppliers,INV-85594,Other project cost,6950
+JE-100499,LME-P006,2026-08-31,Contractor,Brightwell Consulting Ltd,INV-46346,Contractor invoice,45410
+JE-100500,LME-P006,2026-08-31,Contractor,Ellis and Marsh Advisory LLP,INV-25074,Contractor invoice,25490
+JE-100501,LME-P006,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,59130
+JE-100502,LME-P006,2026-08-31,Software Licence,Quayside Software Ltd,INV-42654,Licence fee,20950
+JE-100503,LME-P006,2026-08-31,Training,Learning Works Ltd,INV-23648,Training,8330
+JE-100504,LME-P006,2026-08-31,Other,Travel and expenses,INV-66713,Other project cost,4690
+JE-100505,LME-P007,2026-08-31,Contractor,Harlow Data Services Ltd,INV-21956,Contractor invoice,62990
+JE-100506,LME-P007,2026-08-31,Contractor,Orchard Digital Ltd,INV-72258,Contractor invoice,70880
+JE-100507,LME-P007,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,81660
+JE-100508,LME-P007,2026-08-31,Software Licence,Quayside Software Ltd,INV-22919,Licence fee,29220
+JE-100509,LME-P007,2026-08-31,Training,Skillbridge Training Ltd,INV-36675,Training,13710
+JE-100510,LME-P007,2026-08-31,Other,Various suppliers,INV-29114,Other project cost,13890
+JE-100511,LME-P008,2026-08-31,Contractor,Brightwell Consulting Ltd,INV-12746,Contractor invoice,30190
+JE-100512,LME-P008,2026-08-31,Contractor,Harlow Data Services Ltd,INV-71532,Contractor invoice,32890
+JE-100513,LME-P008,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,44560
+JE-100514,LME-P008,2026-08-31,Software Licence,Fathom Software Ltd,INV-24918,Licence fee,13700
+JE-100515,LME-P008,2026-08-31,Training,Skillbridge Training Ltd,INV-94963,Training,10730
+JE-100516,LME-P008,2026-08-31,Other,Travel and expenses,INV-66762,Other project cost,10680
+JE-100517,LME-P009,2026-08-31,Contractor,Larch Technology Ltd,INV-41963,Contractor invoice,159230
+JE-100518,LME-P009,2026-08-31,Contractor,Harlow Data Services Ltd,INV-78434,Contractor invoice,93620
+JE-100519,LME-P009,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,80030
+JE-100520,LME-P009,2026-08-31,Software Licence,Quayside Software Ltd,INV-76003,Licence fee,85930
+JE-100521,LME-P009,2026-08-31,Hardware,Pennine Infrastructure Ltd,INV-18990,Hardware purchase,379220
+JE-100522,LME-P009,2026-08-31,Training,Learning Works Ltd,INV-97403,Training,16180
+JE-100523,LME-P009,2026-08-31,Other,Travel and expenses,INV-27977,Other project cost,23930
+JE-100524,LME-P010,2026-08-31,Contractor,Larch Technology Ltd,INV-38647,Contractor invoice,109160
+JE-100525,LME-P010,2026-08-31,Contractor,Ellis and Marsh Advisory LLP,INV-14721,Contractor invoice,97070
+JE-100526,LME-P010,2026-08-31,Internal Labour,Internal payroll recharge,,Payroll recharge,55680
+JE-100527,LME-P010,2026-08-31,Software Licence,Meridian Cloud Services Ltd,INV-76038,Licence fee,86670
+JE-100528,LME-P010,2026-08-31,Hardware,Granite Hardware Ltd,INV-48316,Hardware purchase,163420
+JE-100529,LME-P010,2026-08-31,Training,Learning Works Ltd,INV-19322,Training,11130
+JE-100530,LME-P010,2026-08-31,Other,Travel and expenses,INV-73671,Other project cost,16970
+JE-100531,LME-P001,2026-09-30,Contractor,Harlow Data Services Ltd,INV-25840,Contractor invoice,325660
+JE-100532,LME-P001,2026-09-30,Contractor,Larch Technology Ltd,INV-34200,Contractor invoice,307140
+JE-100533,LME-P001,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,267920
+JE-100534,LME-P001,2026-09-30,Software Licence,Meridian Cloud Services Ltd,INV-74894,Licence fee,200820
+JE-100535,LME-P001,2026-09-30,Hardware,Granite Hardware Ltd,INV-24818,Hardware purchase,144550
+JE-100536,LME-P001,2026-09-30,Training,Learning Works Ltd,INV-65956,Training,27410
+JE-100537,LME-P001,2026-09-30,Other,Travel and expenses,INV-83984,Other project cost,40140
+JE-100538,LME-P002,2026-09-30,Contractor,Brightwell Consulting Ltd,INV-42937,Contractor invoice,71830
+JE-100539,LME-P002,2026-09-30,Contractor,Brightwell Consulting Ltd,INV-62803,Contractor invoice,84430
+JE-100540,LME-P002,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,94350
+JE-100541,LME-P002,2026-09-30,Software Licence,Fathom Software Ltd,INV-48625,Licence fee,67960
+JE-100542,LME-P002,2026-09-30,Hardware,Delta Quay Networks Ltd,INV-54106,Hardware purchase,16830
+JE-100543,LME-P002,2026-09-30,Training,Skillbridge Training Ltd,INV-61000,Training,7150
+JE-100544,LME-P002,2026-09-30,Other,Travel and expenses,INV-94733,Other project cost,10510
+JE-100545,LME-P003,2026-09-30,Contractor,Ellis and Marsh Advisory LLP,INV-36609,Contractor invoice,175510
+JE-100546,LME-P003,2026-09-30,Contractor,Harlow Data Services Ltd,INV-62890,Contractor invoice,152970
+JE-100547,LME-P003,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,98780
+JE-100548,LME-P003,2026-09-30,Software Licence,Meridian Cloud Services Ltd,INV-15892,Licence fee,96160
+JE-100549,LME-P003,2026-09-30,Hardware,Delta Quay Networks Ltd,INV-94732,Hardware purchase,65470
+JE-100550,LME-P003,2026-09-30,Training,Learning Works Ltd,INV-96407,Training,12440
+JE-100551,LME-P003,2026-09-30,Other,Travel and expenses,INV-82242,Other project cost,19890
+JE-100552,LME-P004,2026-09-30,Contractor,Brightwell Consulting Ltd,INV-65786,Contractor invoice,63380
+JE-100553,LME-P004,2026-09-30,Contractor,Harlow Data Services Ltd,INV-77251,Contractor invoice,62210
+JE-100554,LME-P004,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,51720
+JE-100555,LME-P004,2026-09-30,Software Licence,Fathom Software Ltd,INV-73585,Licence fee,40820
+JE-100556,LME-P004,2026-09-30,Hardware,Delta Quay Networks Ltd,INV-19896,Hardware purchase,26990
+JE-100557,LME-P004,2026-09-30,Training,Learning Works Ltd,INV-72982,Training,7760
+JE-100558,LME-P004,2026-09-30,Other,Various suppliers,INV-58507,Other project cost,5720
+JE-100559,LME-P005,2026-09-30,Contractor,Larch Technology Ltd,INV-78164,Contractor invoice,82270
+JE-100560,LME-P005,2026-09-30,Contractor,Ellis and Marsh Advisory LLP,INV-30500,Contractor invoice,48840
+JE-100561,LME-P005,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,81330
+JE-100562,LME-P005,2026-09-30,Software Licence,Fathom Software Ltd,INV-67113,Licence fee,99650
+JE-100563,LME-P005,2026-09-30,Training,Learning Works Ltd,INV-67627,Training,10280
+JE-100564,LME-P005,2026-09-30,Other,Various suppliers,INV-63992,Other project cost,7280
+JE-100565,LME-P006,2026-09-30,Contractor,Orchard Digital Ltd,INV-59335,Contractor invoice,44790
+JE-100566,LME-P006,2026-09-30,Contractor,Harlow Data Services Ltd,INV-92541,Contractor invoice,26710
+JE-100567,LME-P006,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,54560
+JE-100568,LME-P006,2026-09-30,Software Licence,Fathom Software Ltd,INV-99368,Licence fee,18350
+JE-100569,LME-P006,2026-09-30,Training,Skillbridge Training Ltd,INV-67847,Training,7570
+JE-100570,LME-P006,2026-09-30,Other,Travel and expenses,INV-40761,Other project cost,5060
+JE-100571,LME-P007,2026-09-30,Contractor,Brightwell Consulting Ltd,INV-53801,Contractor invoice,71880
+JE-100572,LME-P007,2026-09-30,Contractor,Harlow Data Services Ltd,INV-71310,Contractor invoice,53290
+JE-100573,LME-P007,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,75190
+JE-100574,LME-P007,2026-09-30,Software Licence,Meridian Cloud Services Ltd,INV-90359,Licence fee,25150
+JE-100575,LME-P007,2026-09-30,Training,Learning Works Ltd,INV-63641,Training,11310
+JE-100576,LME-P007,2026-09-30,Other,Various suppliers,INV-11235,Other project cost,11530
+JE-100577,LME-P008,2026-09-30,Contractor,Orchard Digital Ltd,INV-60483,Contractor invoice,44490
+JE-100578,LME-P008,2026-09-30,Contractor,Brightwell Consulting Ltd,INV-73546,Contractor invoice,24890
+JE-100579,LME-P008,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,40890
+JE-100580,LME-P008,2026-09-30,Software Licence,Fathom Software Ltd,INV-18765,Licence fee,13790
+JE-100581,LME-P008,2026-09-30,Training,Learning Works Ltd,INV-38736,Training,11570
+JE-100582,LME-P008,2026-09-30,Other,Travel and expenses,INV-14045,Other project cost,9250
+JE-100583,LME-P009,2026-09-30,Contractor,Brightwell Consulting Ltd,INV-77887,Contractor invoice,141030
+JE-100584,LME-P009,2026-09-30,Contractor,Brightwell Consulting Ltd,INV-43691,Contractor invoice,116850
+JE-100585,LME-P009,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,80960
+JE-100586,LME-P009,2026-09-30,Software Licence,Quayside Software Ltd,INV-25029,Licence fee,84060
+JE-100587,LME-P009,2026-09-30,Hardware,Delta Quay Networks Ltd,INV-41809,Hardware purchase,365010
+JE-100588,LME-P009,2026-09-30,Training,Learning Works Ltd,INV-11880,Training,16320
+JE-100589,LME-P009,2026-09-30,Other,Various suppliers,INV-91524,Other project cost,24000
+JE-100590,LME-P010,2026-09-30,Contractor,Northfield Networks Ltd,INV-48213,Network refresh installation,148500
+JE-100591,LME-P010,2026-09-30,Contractor,Northfield Networks Ltd,INV-48213,Network refresh installation,148500
+JE-100592,LME-P010,2026-09-30,Contractor,Brightwell Consulting Ltd,INV-88462,Contractor invoice,25090
+JE-100593,LME-P010,2026-09-30,Contractor,Ellis and Marsh Advisory LLP,INV-10665,Contractor invoice,29420
+JE-100594,LME-P010,2026-09-30,Internal Labour,Internal payroll recharge,,Payroll recharge,52820
+JE-100595,LME-P010,2026-09-30,Software Licence,Quayside Software Ltd,INV-97808,Licence fee,75280
+JE-100596,LME-P010,2026-09-30,Hardware,Delta Quay Networks Ltd,INV-16988,Hardware purchase,169950
+JE-100597,LME-P010,2026-09-30,Training,Skillbridge Training Ltd,INV-71778,Training,9900
+JE-100598,LME-P010,2026-09-30,Other,Travel and expenses,INV-90570,Other project cost,15910
+JE-100599,LME-P001,2026-09-30,Software Licence,Fathom Software Ltd,INV-61250,Licence milestone M4 payment,2600000
+JE-100600,LME-P001,2026-10-31,Contractor,Harlow Data Services Ltd,INV-66189,Contractor invoice,440650
+JE-100601,LME-P001,2026-10-31,Contractor,Larch Technology Ltd,INV-55339,Contractor invoice,293380
+JE-100602,LME-P001,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,290790
+JE-100603,LME-P001,2026-10-31,Software Licence,Fathom Software Ltd,INV-48872,Licence fee,224850
+JE-100604,LME-P001,2026-10-31,Hardware,Granite Hardware Ltd,INV-93415,Hardware purchase,146920
+JE-100605,LME-P001,2026-10-31,Training,Learning Works Ltd,INV-47867,Training,26200
+JE-100606,LME-P001,2026-10-31,Other,Travel and expenses,INV-18154,Other project cost,43860
+JE-100607,LME-P002,2026-10-31,Contractor,Brightwell Consulting Ltd,INV-10939,Contractor invoice,78330
+JE-100608,LME-P002,2026-10-31,Contractor,Larch Technology Ltd,INV-73981,Contractor invoice,86370
+JE-100609,LME-P002,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,88650
+JE-100610,LME-P002,2026-10-31,Software Licence,Fathom Software Ltd,INV-54472,Licence fee,73430
+JE-100611,LME-P002,2026-10-31,Hardware,Pennine Infrastructure Ltd,INV-81422,Hardware purchase,17320
+JE-100612,LME-P002,2026-10-31,Training,Skillbridge Training Ltd,INV-69835,Training,7260
+JE-100613,LME-P002,2026-10-31,Other,Travel and expenses,INV-54729,Other project cost,11340
+JE-100614,LME-P003,2026-10-31,Contractor,Ellis and Marsh Advisory LLP,INV-20764,Contractor invoice,159790
+JE-100615,LME-P003,2026-10-31,Contractor,Orchard Digital Ltd,INV-90947,Contractor invoice,165710
+JE-100616,LME-P003,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,95390
+JE-100617,LME-P003,2026-10-31,Software Licence,Meridian Cloud Services Ltd,INV-55817,Licence fee,96330
+JE-100618,LME-P003,2026-10-31,Hardware,Granite Hardware Ltd,INV-54867,Hardware purchase,65000
+JE-100619,LME-P003,2026-10-31,Training,Skillbridge Training Ltd,INV-42663,Training,13090
+JE-100620,LME-P003,2026-10-31,Other,Travel and expenses,INV-23266,Other project cost,19230
+JE-100621,LME-P004,2026-10-31,Contractor,Ellis and Marsh Advisory LLP,INV-16003,Contractor invoice,67330
+JE-100622,LME-P004,2026-10-31,Contractor,Corvus Technology Ltd,INV-48630,Contractor invoice,67740
+JE-100623,LME-P004,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,55660
+JE-100624,LME-P004,2026-10-31,Software Licence,Meridian Cloud Services Ltd,INV-83422,Licence fee,41090
+JE-100625,LME-P004,2026-10-31,Hardware,Delta Quay Networks Ltd,INV-84687,Hardware purchase,26660
+JE-100626,LME-P004,2026-10-31,Training,Learning Works Ltd,INV-72753,Training,7720
+JE-100627,LME-P004,2026-10-31,Other,Various suppliers,INV-56241,Other project cost,5630
+JE-100628,LME-P005,2026-10-31,Contractor,Brightwell Consulting Ltd,INV-16506,Contractor invoice,67460
+JE-100629,LME-P005,2026-10-31,Contractor,Corvus Technology Ltd,INV-66723,Contractor invoice,74600
+JE-100630,LME-P005,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,88230
+JE-100631,LME-P005,2026-10-31,Software Licence,Fathom Software Ltd,INV-39653,Licence fee,111620
+JE-100632,LME-P005,2026-10-31,Training,Skillbridge Training Ltd,INV-88456,Training,11500
+JE-100633,LME-P005,2026-10-31,Other,Various suppliers,INV-64031,Other project cost,6620
+JE-100634,LME-P006,2026-10-31,Contractor,Larch Technology Ltd,INV-10735,Contractor invoice,40000
+JE-100635,LME-P006,2026-10-31,Contractor,Harlow Data Services Ltd,INV-80370,Contractor invoice,30710
+JE-100636,LME-P006,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,57120
+JE-100637,LME-P006,2026-10-31,Software Licence,Fathom Software Ltd,INV-29285,Licence fee,19420
+JE-100638,LME-P006,2026-10-31,Training,Skillbridge Training Ltd,INV-13675,Training,8200
+JE-100639,LME-P006,2026-10-31,Other,Various suppliers,INV-99634,Other project cost,4330
+JE-100640,LME-P007,2026-10-31,Contractor,Larch Technology Ltd,INV-93002,Contractor invoice,12630
+JE-100641,LME-P007,2026-10-31,Contractor,Larch Technology Ltd,INV-30966,Contractor invoice,11420
+JE-100642,LME-P007,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,72770
+JE-100643,LME-P007,2026-10-31,Software Licence,Fathom Software Ltd,INV-63150,Licence fee,25490
+JE-100644,LME-P007,2026-10-31,Training,Skillbridge Training Ltd,INV-73307,Training,12950
+JE-100645,LME-P007,2026-10-31,Other,Travel and expenses,INV-21105,Other project cost,12480
+JE-100646,LME-P008,2026-10-31,Contractor,Larch Technology Ltd,INV-94890,Contractor invoice,37670
+JE-100647,LME-P008,2026-10-31,Contractor,Corvus Technology Ltd,INV-82185,Contractor invoice,25410
+JE-100648,LME-P008,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,42350
+JE-100649,LME-P008,2026-10-31,Software Licence,Quayside Software Ltd,INV-72607,Licence fee,14070
+JE-100650,LME-P008,2026-10-31,Training,Learning Works Ltd,INV-14308,Training,11200
+JE-100651,LME-P008,2026-10-31,Other,Travel and expenses,INV-54939,Other project cost,9600
+JE-100652,LME-P009,2026-10-31,Contractor,Ellis and Marsh Advisory LLP,INV-87585,Contractor invoice,143170
+JE-100653,LME-P009,2026-10-31,Contractor,Harlow Data Services Ltd,INV-45935,Contractor invoice,94860
+JE-100654,LME-P009,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,81430
+JE-100655,LME-P009,2026-10-31,Software Licence,Meridian Cloud Services Ltd,INV-31462,Licence fee,85390
+JE-100656,LME-P009,2026-10-31,Hardware,Granite Hardware Ltd,INV-43231,Hardware purchase,386410
+JE-100657,LME-P009,2026-10-31,Training,Learning Works Ltd,INV-33847,Training,16550
+JE-100658,LME-P009,2026-10-31,Other,Travel and expenses,INV-71551,Other project cost,25230
+JE-100659,LME-P010,2026-10-31,Contractor,Ellis and Marsh Advisory LLP,INV-10499,Contractor invoice,122050
+JE-100660,LME-P010,2026-10-31,Contractor,Larch Technology Ltd,INV-15027,Contractor invoice,87530
+JE-100661,LME-P010,2026-10-31,Internal Labour,Internal payroll recharge,,Payroll recharge,55470
+JE-100662,LME-P010,2026-10-31,Software Licence,Fathom Software Ltd,INV-81157,Licence fee,78360
+JE-100663,LME-P010,2026-10-31,Hardware,Pennine Infrastructure Ltd,INV-14231,Hardware purchase,161620
+JE-100664,LME-P010,2026-10-31,Training,Skillbridge Training Ltd,INV-74041,Training,10610
+JE-100665,LME-P010,2026-10-31,Other,Travel and expenses,INV-60172,Other project cost,16910

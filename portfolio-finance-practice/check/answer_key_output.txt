@@ -1,0 +1,102 @@
+== P001 cumulative budget vs actual by month ==
+            budget_cum   actual_cum          var
+month_end                                       
+2026-01-31      536000    530,990.0     -5,010.0
+2026-02-28     1206000  1,198,820.0     -7,180.0
+2026-03-31     2010000  1,996,300.0    -13,700.0
+2026-04-30     2948000  2,517,540.0   -430,460.0
+2026-05-31     4020000  3,115,900.0   -904,100.0
+2026-06-30     7692000  3,716,710.0 -3,975,290.0
+2026-07-31     8764000  6,212,330.0 -2,551,670.0
+2026-08-31     9970000  7,426,420.0 -2,543,580.0
+2026-09-30    11310000 11,340,060.0     30,060.0
+2026-10-31    12784000 12,806,710.0     22,710.0
+
+Latest closed month: 2026-10-31  latest snapshot: 2026-10-31
+
+== Project table (as of Oct) ==
+                              name  BudgetFY  BudgetYTD  ActualYTD  Committed  ForecastFY       EAC   VarYTD  VarYTD%   EACvar  EACvar%  FcstChg%    Flag
+project_id                                                                                                                                               
+LME-P001    Clearing Platform Repl  16000000   12784000   12806710    2003000    16068000  16067710    22710      0.2    67710      0.4      -0.7      OK
+LME-P002    Margin and Collateral    4000000    3320000    3283180     505000     3980000   3978180   -36820     -1.1   -21820     -0.5       0.8      OK
+LME-P003    Electronic Trading Enh   7000000    5880000    5774020     750000     6980000   6740020  -105980     -1.8  -259980     -3.7       0.5      OK
+LME-P004    Market Data Distributi   3000000    2520000    2719120     318000     2897000   3136120   199120      7.9   136120      4.5       1.6      OK
+LME-P005    Enterprise Data Platfo   4000000    3320000    3211140     506000     5600000   5600140  -108860     -3.3  1600140     40.0      40.0  Review
+LME-P006    Management Reporting A   2000000    1700000    1691880     246000     1985000   1984880    -8120     -0.5   -15120     -0.8      -0.7      OK
+LME-P007    UK Regulatory Reportin   3000000    2580000    2508640     283000     3031000   2944640   -71360     -2.8   -55360     -1.8       0.7      OK
+LME-P008    Trade Reporting Contro   1800000    1548000    1535890     119000     1785000   1785890   -12110     -0.8   -14110     -0.8      -0.2      OK
+LME-P009     Data Centre Migration   7200000    5904000    6913880    1002000     8442000   8427880  1009880     17.1  1227880     17.1       0.0  Review
+LME-P010    Network and Security R   6000000    4980000    5156290     798000     5986000   6134290   176290      3.5   134290      2.2      -1.1      OK
+
+Totals: {'BudgetFY': 54000000, 'BudgetYTD': 44536000, 'ActualYTD': 45600750, 'Committed': 6530000, 'ForecastFY': 56754000, 'EAC': 56799750}
+Projects to Review: 2 ['LME-P005', 'LME-P009']
+
+== P005 forecast FY by snapshot ==
+                    ForecastFY  chg%
+snapshot_month_end                  
+2026-01-31             3875000   NaN
+2026-02-28             3892000   0.4
+2026-03-31             3915000   0.6
+2026-04-30             3887000  -0.7
+2026-05-31             3890000   0.1
+2026-06-30             3929000   1.0
+2026-07-31             4000000   1.8
+2026-08-31             4000000   0.0
+2026-09-30             4000000   0.0
+2026-10-31             5600000  40.0
+
+Portfolio forecast FY by snapshot:
+ snapshot_month_end
+2026-01-31    53704000
+2026-02-28    53758000
+2026-03-31    52707000
+2026-04-30    52700000
+2026-05-31    53294000
+2026-06-30    54808000
+2026-07-31    54744000
+2026-08-31    54860000
+2026-09-30    55224000
+2026-10-31    56754000
+Name: amount_gbp, dtype: int64
+
+== Lag-1 forecast accuracy by PM ==
+                   abs_err          err       actual   n  Error%  Bias%
+pm                                                                     
+Daniel Okafor    218,650.0    156,390.0  3,639,610.0  18     6.0    4.3
+Marcus Webb      274,930.0   -104,610.0  4,794,610.0   9     5.7   -2.2
+Priya Nair       397,880.0    -95,340.0 15,276,340.0  18     2.6   -0.6
+Rachel Chen      212,330.0    -38,610.0  6,582,610.0   9     3.2   -0.6
+Sofia Meyer      282,430.0    215,850.0  4,512,150.0  18     6.3    4.8
+Tom Hargreaves 1,400,940.0 -1,083,220.0  7,831,220.0  18    17.9  -13.8
+Portfolio Error%: 6.537022000378078  Bias%: -2.227056885948062
+
+== by project ==
+            Error%  Bias%
+project_id               
+LME-P001       2.4   -0.4
+LME-P002       3.3   -1.6
+LME-P003      16.3  -10.3
+LME-P004      21.4  -21.4
+LME-P005       7.2    5.4
+LME-P006       4.5    3.6
+LME-P007       7.7    6.8
+LME-P008       3.3    0.2
+LME-P009       3.2   -0.6
+LME-P010       5.7   -2.2
+
+== Tracker vs ledger (Oct YTD) ==
+            tracker_ytd tracker_month  ledger_ytd    diff         status
+project_id                                                              
+LME-P001       12807000    2026-10-31    12806710     290             OK
+LME-P002        3283000    2026-10-31     3283180    -180             OK
+LME-P003        6014000    2026-10-31     5774020  239980          Break
+LME-P004        2479000    2026-10-31     2719120 -240120          Break
+LME-P005        3211000    2026-10-31     3211140    -140             OK
+LME-P006        1692000    2026-10-31     1691880     120             OK
+LME-P007        2595000    2026-10-31     2508640   86360          Break
+LME-P008        1536000    2026-10-31     1535890     110             OK
+LME-P009        6081000    2026-09-30     6913880 -832880  Not submitted
+LME-P010        5008000    2026-10-31     5156290 -148290          Break
+
+P009 PM comment:  [{'project_id': 'LME-P009', 'month_end': '2026-08-31', 'spend_to_date_gbp': 5253000, 'committed_gbp': 607000, 'forecast_to_complete_gbp': 3224000, 'comment': nan}, {'project_id': 'LME-P009', 'month_end': '2026-09-30', 'spend_to_date_gbp': 6081000, 'committed_gbp': 695000, 'forecast_to_complete_gbp': 2362000, 'comment': 'Racking and migration weekends over plan; forecast reflects run-rate'}]
+P009 delivery status: Amber
