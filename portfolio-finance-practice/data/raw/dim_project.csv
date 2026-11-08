@@ -1,0 +1,11 @@
+﻿project_id,project_name,programme,entity,sponsor,pm,approved_budget_gbp,planned_go_live,delivery_status
+LME-P001,Clearing Platform Replacement,Clearing,LME Clear,Head of Clearing,Priya Nair,16000000,2027-09-30,Amber
+LME-P002,Margin and Collateral Upgrade,Clearing,LME Clear,Head of Clearing,Priya Nair,4000000,2026-12-15,Green
+LME-P003,Electronic Trading Enhancements,Trading and Market Structure,LME,Head of Trading,Tom Hargreaves,7000000,2027-03-31,Green
+LME-P004,Market Data Distribution Refresh,Trading and Market Structure,LME,Head of Trading,Tom Hargreaves,3000000,2027-01-29,Green
+LME-P005,Enterprise Data Platform,Data and Reporting,Shared,Chief Data Officer,Sofia Meyer,4000000,2027-02-26,Green
+LME-P006,Management Reporting Automation,Data and Reporting,Shared,Chief Data Officer,Sofia Meyer,2000000,2026-12-18,Green
+LME-P007,UK Regulatory Reporting Changes,Regulatory,LME Clear,Head of Regulatory Affairs,Daniel Okafor,3000000,2027-01-15,Amber
+LME-P008,Trade Reporting Controls,Regulatory,LME,Head of Regulatory Affairs,Daniel Okafor,1800000,2026-12-04,Green
+LME-P009,Data Centre Migration,Infrastructure,Shared,Head of Technology,Rachel Chen,7200000,2027-04-30,Amber
+LME-P010,Network and Security Refresh,Infrastructure,Shared,Head of Technology,Marcus Webb,6000000,2027-02-12,Green
