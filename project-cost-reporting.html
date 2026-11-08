@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2VVJN3DBX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q2VVJN3DBX');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project cost reporting in Power BI | Xuyi Wu</title>
+  <meta name="description" content="Synthetic project portfolio data. All names and figures are invented. A Power BI practice build for project cost reporting, with the measures, data and a Python check.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">Xuyi Wu</a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#reit">REIT case</a>
+        <a href="index.html#pe">PE case</a>
+        <a href="index.html#fundaccounting">Fund accounting</a>
+        <a href="project-cost-reporting.html" aria-current="page">Cost reporting</a>
+        <a href="index.html#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== PAGE HEAD ===== -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Practice build &middot; Power BI</p>
+        <h1>Project cost reporting</h1>
+        <p class="lead">
+          Synthetic project portfolio data. All names and figures are invented.
+          In the data, &ldquo;LME&rdquo; is short for London Mochi Exchange, an invented organisation
+          with no connection to any real company.
+        </p>
+        <p class="lead">
+          This is a practice build of a Power BI report on ten invented projects. It shows how I work:
+          a clean model, measures I can explain, and numbers I checked independently.
+        </p>
+
+        <div class="stat-row">
+          <div class="stat"><span class="stat-label">Budget FY</span><span class="stat-value">&pound;54.0M</span></div>
+          <div class="stat"><span class="stat-label">Forecast FY</span><span class="stat-value">&pound;56.75M</span></div>
+          <div class="stat stat-accent"><span class="stat-label">Estimate at completion</span><span class="stat-value">&pound;56.8M</span></div>
+          <div class="stat stat-accent"><span class="stat-label">Projects flagged</span><span class="stat-value">2 of 10</span></div>
+          <div class="stat"><span class="stat-label">Position at</span><span class="stat-value">31 Oct 2026</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHAT IT IS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The data</p>
+          <h2>What the report is built on</h2>
+        </div>
+        <ul class="plain-list">
+          <li>Ten invented projects with an approved budget of &pound;54.0M for 2026.</li>
+          <li>Monthly ledger actuals to October 2026.</li>
+          <li>A full-year forecast saved at each month-end.</li>
+          <li>Project-manager trackers and purchase-order commitments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== AT A GLANCE (charts) ===== -->
+    <section class="section section-tint" id="glance">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">At a glance</p>
+          <h2>Four views of the numbers</h2>
+          <p class="lead">Redrawn here from the same files as the report, at 31 Oct 2026.</p>
+        </div>
+
+        <div class="glance-grid">
+          <article class="chart-card">
+            <h3>Where each project is heading</h3>
+            <p class="chart-take">Enterprise Data Platform (+40.0%) and Data Centre Migration (+17.1%) are flagged for review. The other eight are within 5% of budget.</p>
+            <p class="chart-sub">Estimate at completion against full-year budget</p>
+        <ul class="bars">
+          <li class="bar-row">
+            <span class="bar-label">Enterprise Data Platform</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill is-alert" style="left:18.18%;width:72.73%"></span></span>
+            <span class="bar-value">+40.0%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Data Centre Migration</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill is-alert" style="left:18.18%;width:31.01%"></span></span>
+            <span class="bar-value">+17.1%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Market Data Distribution Refresh</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill " style="left:18.18%;width:8.25%"></span></span>
+            <span class="bar-value">+4.5%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Network and Security Refresh</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill " style="left:18.18%;width:4.07%"></span></span>
+            <span class="bar-value">+2.2%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Clearing Platform Replacement</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill " style="left:18.18%;width:0.77%"></span></span>
+            <span class="bar-value">+0.4%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Margin and Collateral Upgrade</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill " style="left:17.19%;width:0.99%"></span></span>
+            <span class="bar-value">&minus;0.5%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Management Reporting Automation</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill " style="left:16.81%;width:1.37%"></span></span>
+            <span class="bar-value">&minus;0.8%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Trade Reporting Controls</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill " style="left:16.76%;width:1.43%"></span></span>
+            <span class="bar-value">&minus;0.8%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">UK Regulatory Reporting Changes</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill " style="left:14.83%;width:3.36%"></span></span>
+            <span class="bar-value">&minus;1.8%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Electronic Trading Enhancements</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-band" style="left:9.09%"></span><span class="bar-band" style="left:27.27%"></span><span class="bar-zero" style="left:18.18%"></span><span class="bar-fill " style="left:11.43%;width:6.75%"></span></span>
+            <span class="bar-value">&minus;3.7%</span>
+          </li>
+        </ul>
+            <p class="chart-foot">Dashed lines mark the 5% review threshold. Report page 1.</p>
+          </article>
+
+          <article class="chart-card">
+            <h3>How the forecast moved</h3>
+            <p class="chart-take">The full-year forecast rose &pound;1.53M in October, to &pound;56.75M. Enterprise Data Platform rose &pound;1.6M; the other nine projects together fell &pound;70k.</p>
+            <p class="chart-sub">Full-year forecast as submitted at each month-end</p>
+        <svg class="line-chart" viewBox="0 0 640 400" role="img" aria-labelledby="walk-t walk-d">
+      <title id="walk-t">Full-year forecast by month-end, in millions of pounds</title>
+      <desc id="walk-d">Budget 54.0. Forecast by month-end: Jan 53.70, Feb 53.76, Mar 52.71, Apr 52.70, May 53.29, Jun 54.81, Jul 54.74, Aug 54.86, Sep 55.22, Oct 56.75.</desc>
+      <line class="grid" x1="78" x2="616" y1="360.0" y2="360.0"/><text x="68" y="365.0" text-anchor="end">&pound;52M</text>
+      <line class="grid" x1="78" x2="616" y1="298.2" y2="298.2"/><text x="68" y="303.2" text-anchor="end">&pound;53M</text>
+      <line class="grid" x1="78" x2="616" y1="236.4" y2="236.4"/><text x="68" y="241.4" text-anchor="end">&pound;54M</text>
+      <line class="grid" x1="78" x2="616" y1="174.5" y2="174.5"/><text x="68" y="179.5" text-anchor="end">&pound;55M</text>
+      <line class="grid" x1="78" x2="616" y1="112.7" y2="112.7"/><text x="68" y="117.7" text-anchor="end">&pound;56M</text>
+      <line class="grid" x1="78" x2="616" y1="50.9" y2="50.9"/><text x="68" y="55.9" text-anchor="end">&pound;57M</text>
+      <line class="tick" x1="78.0" x2="78.0" y1="360" y2="366"/><line class="tick" x1="137.8" x2="137.8" y1="360" y2="366"/><line class="tick" x1="197.6" x2="197.6" y1="360" y2="366"/><line class="tick" x1="257.3" x2="257.3" y1="360" y2="366"/><line class="tick" x1="317.1" x2="317.1" y1="360" y2="366"/><line class="tick" x1="376.9" x2="376.9" y1="360" y2="366"/><line class="tick" x1="436.7" x2="436.7" y1="360" y2="366"/><line class="tick" x1="496.4" x2="496.4" y1="360" y2="366"/><line class="tick" x1="556.2" x2="556.2" y1="360" y2="366"/><line class="tick" x1="616.0" x2="616.0" y1="360" y2="366"/>
+      <text x="78.0" y="390" text-anchor="middle">Jan</text><text x="257.3" y="390" text-anchor="middle">Apr</text><text x="436.7" y="390" text-anchor="middle">Jul</text><text x="616.0" y="390" text-anchor="middle">Oct</text>
+      <line class="budget" x1="78" x2="616" y1="236.4" y2="236.4"/>
+      <text class="budget-label" x="86" y="227.4">Budget &pound;54.0M</text>
+      <path class="series" d="M78.0 254.7 L137.8 251.3 L197.6 316.3 L257.3 316.7 L317.1 280.0 L376.9 186.4 L436.7 190.4 L496.4 183.2 L556.2 160.7 L616.0 66.1"/>
+      <circle class="pt" cx="78.0" cy="254.7" r="4.5"><title>Jan 2026: &pound;53.70M</title></circle><circle class="pt" cx="137.8" cy="251.3" r="4.5"><title>Feb 2026: &pound;53.76M</title></circle><circle class="pt" cx="197.6" cy="316.3" r="4.5"><title>Mar 2026: &pound;52.71M</title></circle><circle class="pt" cx="257.3" cy="316.7" r="4.5"><title>Apr 2026: &pound;52.70M</title></circle><circle class="pt" cx="317.1" cy="280.0" r="4.5"><title>May 2026: &pound;53.29M</title></circle><circle class="pt" cx="376.9" cy="186.4" r="4.5"><title>Jun 2026: &pound;54.81M</title></circle><circle class="pt" cx="436.7" cy="190.4" r="4.5"><title>Jul 2026: &pound;54.74M</title></circle><circle class="pt" cx="496.4" cy="183.2" r="4.5"><title>Aug 2026: &pound;54.86M</title></circle><circle class="pt" cx="556.2" cy="160.7" r="4.5"><title>Sep 2026: &pound;55.22M</title></circle><circle class="pt pt-last" cx="616.0" cy="66.1" r="6.5"><title>Oct 2026: &pound;56.75M</title></circle>
+      <text class="val" x="604.0" y="62.1" text-anchor="end">&pound;56.75M</text>
+      <text class="val" x="548.2" y="146.7" text-anchor="end">&pound;55.22M</text>
+    </svg>
+        <p class="legend"><span><i class="lg-line"></i>Full-year forecast at each month-end</span><span><i class="lg-dash"></i>Approved budget</span></p>
+            <p class="chart-foot">Report page 2.</p>
+          </article>
+
+          <article class="chart-card">
+            <h3>Who forecasts well</h3>
+            <p class="chart-take">Forecasts by Tom Hargreaves ran 13.8% low, with an error of 17.9%. Across all six project managers, bias is &minus;2.2% and error 6.5%.</p>
+            <p class="chart-sub">Forecast bias by project manager, one month ahead</p>
+        <ul class="bars">
+          <li class="bar-row">
+            <span class="bar-label">Sofia Meyer<small>error 6.3%</small></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:66.67%"></span><span class="bar-fill " style="left:66.67%;width:19.93%"></span></span>
+            <span class="bar-value">+4.8%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Daniel Okafor<small>error 6.0%</small></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:66.67%"></span><span class="bar-fill " style="left:66.67%;width:17.90%"></span></span>
+            <span class="bar-value">+4.3%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Rachel Chen<small>error 3.2%</small></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:66.67%"></span><span class="bar-fill is-navy" style="left:64.22%;width:2.44%"></span></span>
+            <span class="bar-value">&minus;0.6%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Priya Nair<small>error 2.6%</small></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:66.67%"></span><span class="bar-fill is-navy" style="left:64.07%;width:2.60%"></span></span>
+            <span class="bar-value">&minus;0.6%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Marcus Webb<small>error 5.7%</small></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:66.67%"></span><span class="bar-fill is-navy" style="left:57.58%;width:9.09%"></span></span>
+            <span class="bar-value">&minus;2.2%</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Tom Hargreaves<small>error 17.9%</small></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:66.67%"></span><span class="bar-fill is-navy" style="left:9.03%;width:57.63%"></span></span>
+            <span class="bar-value">&minus;13.8%</span>
+          </li>
+        </ul>
+        <p class="legend"><span><i class="lg-navy"></i>Forecasts ran low</span><span><i class="lg-blue"></i>Forecasts ran high</span></p>
+            <p class="chart-foot">Bias keeps the direction; error ignores it. Report page 2.</p>
+          </article>
+
+          <article class="chart-card">
+            <h3>Where tracker and ledger disagree</h3>
+            <p class="chart-take">Four projects differ by &pound;10,000 or more, and Data Centre Migration had not submitted its latest tracker. The other five are within &pound;300.</p>
+            <p class="chart-sub">Tracker minus ledger, year to date</p>
+        <ul class="bars">
+          <li class="bar-row">
+            <span class="bar-label">Electronic Trading Enhancements<span class="tag is-alert">wrong project</span></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-alert" style="left:75.00%;width:20.00%"></span></span>
+            <span class="bar-value">+&pound;239,980</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">UK Regulatory Reporting Changes<span class="tag is-alert">timing</span></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-alert" style="left:75.00%;width:7.20%"></span></span>
+            <span class="bar-value">+&pound;86,360</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Clearing Platform Replacement</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-muted" style="left:75.00%;width:0.60%"></span></span>
+            <span class="bar-value">+&pound;290</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Management Reporting Automation</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-muted" style="left:75.00%;width:0.60%"></span></span>
+            <span class="bar-value">+&pound;120</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Trade Reporting Controls</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-muted" style="left:75.00%;width:0.60%"></span></span>
+            <span class="bar-value">+&pound;110</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Enterprise Data Platform</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-muted" style="left:74.40%;width:0.60%"></span></span>
+            <span class="bar-value">&minus;&pound;140</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Margin and Collateral Upgrade</span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-muted" style="left:74.40%;width:0.60%"></span></span>
+            <span class="bar-value">&minus;&pound;180</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Network and Security Refresh<span class="tag is-alert">posted twice</span></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-alert" style="left:62.64%;width:12.36%"></span></span>
+            <span class="bar-value">&minus;&pound;148,290</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Market Data Distribution Refresh<span class="tag is-alert">wrong project</span></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-alert" style="left:54.99%;width:20.01%"></span></span>
+            <span class="bar-value">&minus;&pound;240,120</span>
+          </li>
+          <li class="bar-row">
+            <span class="bar-label">Data Centre Migration<span class="tag is-amber">not submitted</span></span>
+            <span class="bar-track" aria-hidden="true"><span class="bar-zero" style="left:75.00%"></span><span class="bar-fill is-amber" style="left:5.59%;width:69.41%"></span></span>
+            <span class="bar-value">&minus;&pound;832,880</span>
+          </li>
+        </ul>
+        <p class="legend"><span><i class="lg-alert"></i>Break (&pound;10,000 or more)</span><span><i class="lg-amber"></i>Not submitted</span><span><i class="lg-muted"></i>OK</span></p>
+            <p class="chart-foot">Report page 3.</p>
+          </article>
+        </div>
+
+        <p class="chart-note">These charts are drawn from the cleaned CSVs in the project folder, and every plotted value agrees with the output of the Python check.</p>
+      </div>
+    </section>
+
+    <!-- ===== REPORT PAGES ===== -->
+    <section class="section" id="report">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The report</p>
+          <h2>Three pages</h2>
+          <p class="lead">Select an image to open it full size.</p>
+        </div>
+
+        <figure class="report-fig">
+          <a href="portfolio-finance-practice/report/1-cfo-view.png">
+            <img src="portfolio-finance-practice/report/1-cfo-view.png" width="4800" height="2751" loading="lazy"
+                 alt="Report page 1, CFO view. Cards for budget, actual, committed, forecast, estimate at completion, capex share and projects to review, a table by project with variance and flag, and a chart of actual against budget year to date. The red footnote says the data is synthetic.">
+          </a>
+          <figcaption><strong>1. CFO view.</strong> Budget, actuals, committed, forecast, estimate at completion, variance, projects flagged for review and capex share.</figcaption>
+        </figure>
+
+        <figure class="report-fig">
+          <a href="portfolio-finance-practice/report/2-forecast-accuracy.png">
+            <img src="portfolio-finance-practice/report/2-forecast-accuracy.png" width="4800" height="2751" loading="lazy"
+                 alt="Report page 2, forecast accuracy. A bar chart of forecast bias by project, a table of forecast error and bias by project manager, and a line chart of the full-year forecast by month-end. The red footnote says the data is synthetic.">
+          </a>
+          <figcaption><strong>2. Forecast accuracy.</strong> Error and bias by project manager, bias by project, and how the full-year forecast moved month by month.</figcaption>
+        </figure>
+
+        <figure class="report-fig">
+          <a href="portfolio-finance-practice/report/3-reconciliation.png">
+            <img src="portfolio-finance-practice/report/3-reconciliation.png" width="4800" height="2751" loading="lazy"
+                 alt="Report page 3, reconciliation. A table of tracker minus ledger by project with four breaks and one project marked not submitted, a table showing one invoice posted twice, and a table of project-manager comments. The red footnote says the data is synthetic.">
+          </a>
+          <figcaption><strong>3. Reconciliation.</strong> Project-manager trackers against the ledger. Four breaks with three causes (a timing item, an invoice coded to the wrong project, an invoice posted twice), and one project that had not submitted.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== MEASURES ===== -->
+    <section class="section section-tint" id="measures">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The measures</p>
+          <h2>Four of the DAX measures</h2>
+          <p class="lead">The full set is in <a href="https://github.com/xuyiw/xuyiw.github.io/blob/main/portfolio-finance-practice/dax/measures.md">measures.md</a>.</p>
+        </div>
+
+        <h3 class="sub-title first">Budget YTD</h3>
+        <pre class="code-block"><code>Budget YTD =
+VAR AsOf = MIN ( MAX ( dim_date[month_end] ), [Latest Closed Month] )
+RETURN
+    CALCULATE (
+        SUM ( fact_budget[amount_gbp] ),
+        FILTER ( ALL ( dim_date ), dim_date[month_end] &lt;= AsOf )
+    )</code></pre>
+        <p class="measure-note">Stops at the latest closed month, so budget is compared like for like with ledger actuals.</p>
+
+        <h3 class="sub-title">EAC</h3>
+        <pre class="code-block"><code>Forecast Remaining =
+VAR Snap = [Latest Snapshot]
+RETURN
+    CALCULATE (
+        SUM ( fact_forecast_snapshots[amount_gbp] ),
+        fact_forecast_snapshots[snapshot_month_end] = Snap,
+        fact_forecast_snapshots[row_type] = "Forecast"
+    )
+
+EAC = [Actual YTD] + [Forecast Remaining]</code></pre>
+        <p class="measure-note">Estimate at completion for the year: ledger actuals to date plus the project managers&rsquo; forecast for the months still to come.</p>
+
+        <h3 class="sub-title">Forecast Bias %</h3>
+        <pre class="code-block"><code>Forecast Bias % =
+VAR t =
+    FILTER (
+        fact_forecast_snapshots,
+        fact_forecast_snapshots[months_ahead] = 1
+            &amp;&amp; NOT ISBLANK ( fact_forecast_snapshots[actual_gbp] )
+    )
+RETURN
+    DIVIDE (
+        SUMX ( t, fact_forecast_snapshots[amount_gbp] - fact_forecast_snapshots[actual_gbp] ),
+        SUMX ( t, fact_forecast_snapshots[actual_gbp] )
+    )</code></pre>
+        <p class="measure-note">Each forecast made one month ahead is compared with the ledger figure for that month. Bias keeps the direction: negative means forecasts run low.</p>
+
+        <h3 class="sub-title">Tracker Minus Ledger</h3>
+        <pre class="code-block"><code>Tracker Minus Ledger =
+SUMX (
+    VALUES ( dim_project[project_id] ),
+    VAR LastSub = CALCULATE ( MAX ( fact_pm_submissions[month_end] ) )
+    VAR Tracker =
+        CALCULATE (
+            SUM ( fact_pm_submissions[spend_to_date_gbp] ),
+            fact_pm_submissions[month_end] = LastSub
+        )
+    RETURN
+        IF ( ISBLANK ( Tracker ), BLANK (), Tracker - [Actual YTD] )
+)</code></pre>
+        <p class="measure-note">The project manager&rsquo;s latest tracker figure less the ledger. A difference of &pound;10,000 or more is a break.</p>
+      </div>
+    </section>
+
+    <!-- ===== CHECK + LIMITS ===== -->
+    <section class="section" id="check">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The check</p>
+          <h2>Checked a second way</h2>
+          <p class="lead">
+            Every headline figure was checked against a separate Python calculation on the same files.
+            The script reads the cleaned CSVs and recomputes budget, actuals, committed, forecast, estimate at completion,
+            the review flags, forecast error and bias, and the tracker against the ledger.
+          </p>
+        </div>
+
+        <details class="code-details">
+          <summary>The Python script <span>answer_key.py, 92 lines</span></summary>
+          <pre class="code-block"><code>import sys
+import os
+import numpy as np
+import pandas as pd
+
+D = sys.argv[1]
+rd = lambda f: pd.read_csv(os.path.join(D, f), encoding="utf-8-sig")
+proj = rd("dim_project.csv")
+bud = rd("fact_budget.csv")
+act = rd("fact_actuals.csv")
+com = rd("fact_commitments.csv")
+snap = rd("fact_forecast_snapshots.csv")
+pm = rd("fact_pm_submissions.csv")
+pd.set_option("display.width", 220)
+pd.set_option("display.max_columns", 30)
+pd.options.display.float_format = "{:,.1f}".format
+
+short = proj.set_index("project_id").project_name.str.slice(0, 22)
+
+# --- story 2: P001 cumulative variance by month
+print("== P001 cumulative budget vs actual by month ==")
+b = bud[bud.project_id == "LME-P001"].groupby("month_end").amount_gbp.sum().cumsum()
+a = act[act.project_id == "LME-P001"].groupby("month_end").amount_gbp.sum().reindex(b.index).fillna(0).cumsum()
+t = pd.DataFrame({"budget_cum": b, "actual_cum": a, "var": a - b})
+print(t.head(10))
+
+# --- as-of measures
+LM = act.month_end.max()
+LS = snap.snapshot_month_end.max()
+print("\nLatest closed month:", LM, " latest snapshot:", LS)
+
+bytd = bud[bud.month_end &lt;= LM].groupby("project_id").amount_gbp.sum()
+aytd = act[act.month_end &lt;= LM].groupby("project_id").amount_gbp.sum()
+committed = com[com.month_end == LM].set_index("project_id").open_po_gbp
+s_latest = snap[snap.snapshot_month_end == LS]
+ffy = s_latest.groupby("project_id").amount_gbp.sum()
+frem = s_latest[s_latest.row_type == "Forecast"].groupby("project_id").amount_gbp.sum()
+eac = aytd + frem
+prior = snap[snap.snapshot_month_end == "2026-09-30"].groupby("project_id").amount_gbp.sum()
+fchg = ffy / prior - 1
+bfy = bud.groupby("project_id").amount_gbp.sum()
+dfp = pd.DataFrame({"name": short, "BudgetFY": bfy, "BudgetYTD": bytd, "ActualYTD": aytd, "Committed": committed,
+                    "ForecastFY": ffy, "EAC": eac, "PriorFY": prior})
+dfp["VarYTD"] = dfp.ActualYTD - dfp.BudgetYTD
+dfp["VarYTD%"] = dfp.VarYTD / dfp.BudgetYTD * 100
+dfp["EACvar"] = dfp.EAC - dfp.BudgetFY
+dfp["EACvar%"] = dfp.EACvar / dfp.BudgetFY * 100
+dfp["FcstChg%"] = fchg * 100
+dfp["Flag"] = np.where((dfp["EACvar%"].abs() &gt; 5) | (dfp["FcstChg%"].abs() &gt; 10), "Review", "OK")
+print("\n== Project table (as of Oct) ==")
+print(dfp.drop(columns=["PriorFY"]).to_string())
+print("\nTotals:", dfp[["BudgetFY", "BudgetYTD", "ActualYTD", "Committed", "ForecastFY", "EAC"]].sum().to_dict())
+print("Projects to Review:", (dfp.Flag == "Review").sum(), list(dfp[dfp.Flag == "Review"].index))
+
+# --- story 1: P005 forecast FY by snapshot
+print("\n== P005 forecast FY by snapshot ==")
+x = snap[snap.project_id == "LME-P005"].groupby("snapshot_month_end").amount_gbp.sum()
+print(pd.DataFrame({"ForecastFY": x, "chg%": x.pct_change() * 100}))
+tot = snap.groupby("snapshot_month_end").amount_gbp.sum()
+print("\nPortfolio forecast FY by snapshot:\n", tot)
+
+# --- story 3: forecast accuracy by PM (lag-1)
+f1 = snap[(snap.row_type == "Forecast") &amp; (snap.months_ahead == 1) &amp; snap.actual_gbp.notna()].copy()
+f1 = f1.merge(proj[["project_id", "pm"]], on="project_id")
+f1["abs_err"] = (f1.amount_gbp - f1.actual_gbp).abs()
+f1["err"] = f1.amount_gbp - f1.actual_gbp
+g = f1.groupby("pm").agg(abs_err=("abs_err", "sum"), err=("err", "sum"), actual=("actual_gbp", "sum"), n=("err", "size"))
+g["Error%"] = g.abs_err / g.actual * 100
+g["Bias%"] = g.err / g.actual * 100
+print("\n== Lag-1 forecast accuracy by PM ==")
+print(g)
+tg = f1.agg(dict(abs_err="sum", err="sum", actual_gbp="sum"))
+print("Portfolio Error%:", tg.abs_err / tg.actual_gbp * 100, " Bias%:", tg.err / tg.actual_gbp * 100)
+g2 = f1.groupby("project_id").agg(abs_err=("abs_err", "sum"), err=("err", "sum"), actual=("actual_gbp", "sum"))
+g2["Error%"] = g2.abs_err / g2.actual * 100
+g2["Bias%"] = g2.err / g2.actual * 100
+print("\n== by project ==")
+print(g2[["Error%", "Bias%"]])
+
+# --- story 4: tracker vs ledger
+tr = pm.sort_values("month_end").groupby("project_id").tail(1).set_index("project_id")
+tr = tr[["month_end", "spend_to_date_gbp"]]
+rec = pd.DataFrame({"tracker_ytd": tr.spend_to_date_gbp, "tracker_month": tr.month_end, "ledger_ytd": aytd})
+rec["diff"] = rec.tracker_ytd - rec.ledger_ytd
+rec["status"] = np.where(rec.tracker_month &lt; LM, "Not submitted",
+                         np.where(rec["diff"].abs() &gt;= 10000, "Break", "OK"))
+print("\n== Tracker vs ledger (Oct YTD) ==")
+print(rec)
+
+# P009 note
+print("\nP009 PM comment: ", pm[(pm.project_id == "LME-P009")].tail(2).to_dict("records"))
+print("P009 delivery status:", proj.set_index("project_id").loc["LME-P009", "delivery_status"])</code></pre>
+        </details>
+
+        <details class="code-details">
+          <summary>What it prints <span>answer_key_output.txt, 102 lines</span></summary>
+          <pre class="code-block"><code>== P001 cumulative budget vs actual by month ==
+            budget_cum   actual_cum          var
+month_end                                       
+2026-01-31      536000    530,990.0     -5,010.0
+2026-02-28     1206000  1,198,820.0     -7,180.0
+2026-03-31     2010000  1,996,300.0    -13,700.0
+2026-04-30     2948000  2,517,540.0   -430,460.0
+2026-05-31     4020000  3,115,900.0   -904,100.0
+2026-06-30     7692000  3,716,710.0 -3,975,290.0
+2026-07-31     8764000  6,212,330.0 -2,551,670.0
+2026-08-31     9970000  7,426,420.0 -2,543,580.0
+2026-09-30    11310000 11,340,060.0     30,060.0
+2026-10-31    12784000 12,806,710.0     22,710.0
+
+Latest closed month: 2026-10-31  latest snapshot: 2026-10-31
+
+== Project table (as of Oct) ==
+                              name  BudgetFY  BudgetYTD  ActualYTD  Committed  ForecastFY       EAC   VarYTD  VarYTD%   EACvar  EACvar%  FcstChg%    Flag
+project_id                                                                                                                                               
+LME-P001    Clearing Platform Repl  16000000   12784000   12806710    2003000    16068000  16067710    22710      0.2    67710      0.4      -0.7      OK
+LME-P002    Margin and Collateral    4000000    3320000    3283180     505000     3980000   3978180   -36820     -1.1   -21820     -0.5       0.8      OK
+LME-P003    Electronic Trading Enh   7000000    5880000    5774020     750000     6980000   6740020  -105980     -1.8  -259980     -3.7       0.5      OK
+LME-P004    Market Data Distributi   3000000    2520000    2719120     318000     2897000   3136120   199120      7.9   136120      4.5       1.6      OK
+LME-P005    Enterprise Data Platfo   4000000    3320000    3211140     506000     5600000   5600140  -108860     -3.3  1600140     40.0      40.0  Review
+LME-P006    Management Reporting A   2000000    1700000    1691880     246000     1985000   1984880    -8120     -0.5   -15120     -0.8      -0.7      OK
+LME-P007    UK Regulatory Reportin   3000000    2580000    2508640     283000     3031000   2944640   -71360     -2.8   -55360     -1.8       0.7      OK
+LME-P008    Trade Reporting Contro   1800000    1548000    1535890     119000     1785000   1785890   -12110     -0.8   -14110     -0.8      -0.2      OK
+LME-P009     Data Centre Migration   7200000    5904000    6913880    1002000     8442000   8427880  1009880     17.1  1227880     17.1       0.0  Review
+LME-P010    Network and Security R   6000000    4980000    5156290     798000     5986000   6134290   176290      3.5   134290      2.2      -1.1      OK
+
+Totals: {'BudgetFY': 54000000, 'BudgetYTD': 44536000, 'ActualYTD': 45600750, 'Committed': 6530000, 'ForecastFY': 56754000, 'EAC': 56799750}
+Projects to Review: 2 ['LME-P005', 'LME-P009']
+
+== P005 forecast FY by snapshot ==
+                    ForecastFY  chg%
+snapshot_month_end                  
+2026-01-31             3875000   NaN
+2026-02-28             3892000   0.4
+2026-03-31             3915000   0.6
+2026-04-30             3887000  -0.7
+2026-05-31             3890000   0.1
+2026-06-30             3929000   1.0
+2026-07-31             4000000   1.8
+2026-08-31             4000000   0.0
+2026-09-30             4000000   0.0
+2026-10-31             5600000  40.0
+
+Portfolio forecast FY by snapshot:
+ snapshot_month_end
+2026-01-31    53704000
+2026-02-28    53758000
+2026-03-31    52707000
+2026-04-30    52700000
+2026-05-31    53294000
+2026-06-30    54808000
+2026-07-31    54744000
+2026-08-31    54860000
+2026-09-30    55224000
+2026-10-31    56754000
+Name: amount_gbp, dtype: int64
+
+== Lag-1 forecast accuracy by PM ==
+                   abs_err          err       actual   n  Error%  Bias%
+pm                                                                     
+Daniel Okafor    218,650.0    156,390.0  3,639,610.0  18     6.0    4.3
+Marcus Webb      274,930.0   -104,610.0  4,794,610.0   9     5.7   -2.2
+Priya Nair       397,880.0    -95,340.0 15,276,340.0  18     2.6   -0.6
+Rachel Chen      212,330.0    -38,610.0  6,582,610.0   9     3.2   -0.6
+Sofia Meyer      282,430.0    215,850.0  4,512,150.0  18     6.3    4.8
+Tom Hargreaves 1,400,940.0 -1,083,220.0  7,831,220.0  18    17.9  -13.8
+Portfolio Error%: 6.537022000378078  Bias%: -2.227056885948062
+
+== by project ==
+            Error%  Bias%
+project_id               
+LME-P001       2.4   -0.4
+LME-P002       3.3   -1.6
+LME-P003      16.3  -10.3
+LME-P004      21.4  -21.4
+LME-P005       7.2    5.4
+LME-P006       4.5    3.6
+LME-P007       7.7    6.8
+LME-P008       3.3    0.2
+LME-P009       3.2   -0.6
+LME-P010       5.7   -2.2
+
+== Tracker vs ledger (Oct YTD) ==
+            tracker_ytd tracker_month  ledger_ytd    diff         status
+project_id                                                              
+LME-P001       12807000    2026-10-31    12806710     290             OK
+LME-P002        3283000    2026-10-31     3283180    -180             OK
+LME-P003        6014000    2026-10-31     5774020  239980          Break
+LME-P004        2479000    2026-10-31     2719120 -240120          Break
+LME-P005        3211000    2026-10-31     3211140    -140             OK
+LME-P006        1692000    2026-10-31     1691880     120             OK
+LME-P007        2595000    2026-10-31     2508640   86360          Break
+LME-P008        1536000    2026-10-31     1535890     110             OK
+LME-P009        6081000    2026-09-30     6913880 -832880  Not submitted
+LME-P010        5008000    2026-10-31     5156290 -148290          Break
+
+P009 PM comment:  [{'project_id': 'LME-P009', 'month_end': '2026-08-31', 'spend_to_date_gbp': 5253000, 'committed_gbp': 607000, 'forecast_to_complete_gbp': 3224000, 'comment': nan}, {'project_id': 'LME-P009', 'month_end': '2026-09-30', 'spend_to_date_gbp': 6081000, 'committed_gbp': 695000, 'forecast_to_complete_gbp': 2362000, 'comment': 'Racking and migration weekends over plan; forecast reflects run-rate'}]
+P009 delivery status: Amber</code></pre>
+        </details>
+
+        <p class="file-links">
+          To run it, from the project folder: <code>python check/answer_key.py data/clean</code> (needs Python with pandas and numpy).
+          Both files are in the
+          <a href="https://github.com/xuyiw/xuyiw.github.io/tree/main/portfolio-finance-practice/check">check folder</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== LIMITS ===== -->
+    <section class="section section-tint" id="limits">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What is not here</p>
+          <h2>Limits</h2>
+        </div>
+        <ul class="plain-list">
+          <li>No live data refresh.</li>
+          <li>No row-level security.</li>
+          <li>No connection to a project-management tool.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== DOWNLOAD ===== -->
+    <section class="section" id="download">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Download</p>
+          <h2>The project folder</h2>
+        </div>
+
+        <div class="download-bar">
+          <p>Opens in Power BI Desktop (free, Windows). The data is already loaded in the file. To refresh it, point the data sources at the data/raw folder, because the report cleans those files in Power Query. The data/clean folder holds the cleaned result for reference.</p>
+          <a href="portfolio-finance-practice/report/portfolio-finance-practice.pbix" download class="btn btn-primary"><i class="fas fa-download"></i> Download the .pbix</a>
+        </div>
+
+        <h3 class="sub-title">What is in the folder</h3>
+        <pre class="code-block"><code>portfolio-finance-practice/
+  README.md
+  report/        three PNGs, the PDF and the .pbix
+  dax/           measures.md
+  data/clean/    the eight cleaned CSVs (for reference)
+  data/raw/      the original messy files the .pbix reads
+  check/         answer_key.py and answer_key_output.txt</code></pre>
+
+        <p class="file-links">
+          <a href="https://github.com/xuyiw/xuyiw.github.io/tree/main/portfolio-finance-practice">Browse the folder on GitHub</a>
+          &middot;
+          <a href="portfolio-finance-practice/report/portfolio-finance-practice.pdf">Report as PDF</a>
+          &middot;
+          <a href="https://github.com/xuyiw/xuyiw.github.io/blob/main/portfolio-finance-practice/README.md">README</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year">2026</span> Xuyi Wu</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
