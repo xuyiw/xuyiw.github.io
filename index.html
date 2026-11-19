@@ -77,6 +77,50 @@
       max-width: 440px;
     }
     .gate-card .social { justify-content: center; margin-top: 28px; }
+
+    /* Request form (shown once the approval backend is connected) */
+    .gate [hidden] { display: none !important; }
+    .gate-form { text-align: left; display: grid; gap: 14px; }
+    .gate-form label {
+      display: grid;
+      gap: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .gate-form .opt { font-weight: 400; color: var(--muted); }
+    .gate-form input, .gate-form textarea {
+      width: 100%;
+      box-sizing: border-box;
+      font: inherit;
+      font-weight: 400;
+      color: var(--ink);
+      background: #fff;
+      padding: 11px 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    .gate-form textarea { resize: vertical; min-height: 84px; }
+    .gate-form input:focus, .gate-form textarea:focus {
+      outline: 2px solid var(--blue);
+      outline-offset: 1px;
+      border-color: var(--blue);
+    }
+    .gate-form button.btn { justify-content: center; width: 100%; font-family: var(--sans); cursor: pointer; }
+    .gate-form button.btn:disabled { opacity: 0.7; cursor: default; transform: none; }
+    .gate-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    .gate-note, .gate-alt { font-size: 0.85rem; color: var(--muted); margin: 0; }
+    .gate-alt { margin-top: 16px; }
+    .gate-alt a { color: var(--blue); }
+    .gate-status {
+      margin: 0;
+      padding: 14px 16px;
+      border-radius: 10px;
+      background: var(--bg-tint);
+      color: var(--navy);
+    }
+    .gate-status.error { color: var(--coral-dark); }
+    .gate-form + .gate-status { margin-top: 16px; }
     @media (max-width: 480px) {
       .gate-card { padding: 36px 22px; }
     }
@@ -95,13 +139,85 @@
         and I will reply by email with a link.
       </p>
 
-      <a href="mailto:wuxuyi001@gmail.com?subject=Access%20request&amp;body=Hi%20Xuyi%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20access%20to%20your%20website.%0D%0A%0D%0AName%3A%0D%0ACompany%20%2F%20role%3A%0D%0AReason%20for%20request%3A%0D%0A%0D%0AThank%20you" class="btn btn-primary"><i class="fas fa-envelope-open-text"></i> Request access</a>
+      <a id="mailto-btn" href="mailto:wuxuyi001@gmail.com?subject=Access%20request&amp;body=Hi%20Xuyi%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20access%20to%20your%20website.%0D%0A%0D%0AName%3A%0D%0ACompany%20%2F%20role%3A%0D%0AReason%20for%20request%3A%0D%0A%0D%0AThank%20you" class="btn btn-primary"><i class="fas fa-envelope-open-text"></i> Request access</a>
+
+      <!-- Shown instead of the mailto button once SCRIPT_URL is set (see the script below). -->
+      <form id="request-form" class="gate-form" hidden>
+        <label>Your name
+          <input type="text" name="name" required maxlength="80" autocomplete="name">
+        </label>
+        <label>Email
+          <input type="email" name="email" required maxlength="120" autocomplete="email">
+        </label>
+        <label><span>Company / role <span class="opt">(optional)</span></span>
+          <input type="text" name="company" maxlength="120" autocomplete="organization">
+        </label>
+        <label><span>Reason <span class="opt">(optional)</span></span>
+          <textarea name="reason" rows="3" maxlength="600"></textarea>
+        </label>
+        <div class="hp" aria-hidden="true">
+          <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send request</button>
+        <p class="gate-note">I only use these details to reply to your request.</p>
+      </form>
+      <p id="request-status" class="gate-status" role="status" aria-live="polite" hidden></p>
+      <p id="mailto-alt" class="gate-alt" hidden>Prefer email? <a id="mailto-alt-link" href="#">Email me directly</a></p>
 
       <div class="social">
         <a href="https://www.linkedin.com/in/xuyi-w-8a30b1142" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </main>
+
+  <script>
+    // After deploying _approval-backend/Code.gs as a web app, paste its address (ending in /exec) here.
+    // While this is empty the page keeps the plain "Request access" email button.
+    const SCRIPT_URL = '';
+
+    (function () {
+      if (!SCRIPT_URL) return;
+
+      var form = document.getElementById('request-form');
+      var mailtoBtn = document.getElementById('mailto-btn');
+      var alt = document.getElementById('mailto-alt');
+      var status = document.getElementById('request-status');
+      var submit = form.querySelector('button[type="submit"]');
+      var submitHtml = submit.innerHTML;
+
+      document.getElementById('mailto-alt-link').href = mailtoBtn.href;
+      mailtoBtn.hidden = true;
+      form.hidden = false;
+      alt.hidden = false;
+
+      function say(message, isError) {
+        status.textContent = message;
+        status.className = 'gate-status' + (isError ? ' error' : '');
+        status.hidden = false;
+      }
+
+      form.addEventListener('submit', function (ev) {
+        ev.preventDefault();
+        submit.disabled = true;
+        submit.textContent = 'Sending...';
+        status.hidden = true;
+
+        // The script answers from another domain, so the reply cannot be read here.
+        // "no-cors" still delivers the request; the page assumes it arrived.
+        fetch(SCRIPT_URL, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(form)) })
+          .then(function () {
+            form.hidden = true;
+            alt.hidden = true;
+            say('Thanks. Your request has been sent, and I will reply by email if it is approved.');
+          })
+          .catch(function () {
+            submit.disabled = false;
+            submit.innerHTML = submitHtml;
+            say('Sorry, that did not send. Please try again, or email me directly.', true);
+          });
+      });
+    })();
+  </script>
 
 </body>
 </html>
