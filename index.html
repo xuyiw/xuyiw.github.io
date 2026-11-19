@@ -12,6 +12,17 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    /* Approved browsers (ones that have opened the real home page) go straight through.
+       Add ?gate to the address to see this private page again and forget the approval. */
+    try {
+      if (/[?&]gate\b/.test(location.search)) {
+        localStorage.removeItem('xw_access');
+      } else if (localStorage.getItem('xw_access') === '1') {
+        location.replace('home-22c3e54d4798.html');
+      }
+    } catch (e) {}
+  </script>
   <title>Xuyi Wu | Private</title>
   <meta name="description" content="This site is private at the moment. Request access by email.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
